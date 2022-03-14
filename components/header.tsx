@@ -7,33 +7,35 @@ export default function Header() {
 
   return (
     <nav id="header" className="fixed w-full z-50">
-      <div id="header" className="relative max-w-7xl mx-auto px-8 z-50">
-        <div className="relative flex items-center justify-between h-16 z-50">
+      <div id="header" className="relative px-5 sm:px-6 md:px-8 z-50">
+        <div className="relative flex items-center justify-between h-20 z-50">
           <div className="flex items-center w-full z-50">
             <Link href="/" passHref>
               <a className="flex-shrink-0">
-                <h1 className="text-white text-xl">Lucas Consejo</h1>
+                <h1 className="text-white text-xl font-medium">
+                  Lucas Consejo
+                </h1>
               </a>
             </Link>
             <div className="hidden md:block w-full">
-              <div className="flex justify-center space-x-10">
+              <div className="flex justify-end space-x-8">
                 <Link href="/a-propos" passHref>
-                  <a className="text-gray-300 hover:text-white px-3 py-2 font-medium">
+                  <a className="text-gray-300 hover:text-white font-medium">
                     À propos
                   </a>
                 </Link>
                 <Link href="/carriere" passHref>
-                  <a className="text-gray-300 hover:text-white px-3 py-2 font-medium">
+                  <a className="text-gray-300 hover:text-white font-medium">
                     Carrière
                   </a>
                 </Link>
                 <Link href="/projets" passHref>
-                  <a className="text-gray-300 hover:text-white px-3 py-2 font-medium">
+                  <a className="text-gray-300 hover:text-white font-medium">
                     Projets
                   </a>
                 </Link>
                 <Link href="/contact" passHref>
-                  <a className="text-gray-300 hover:text-white px-3 py-2 font-medium">
+                  <a className="text-gray-300 hover:text-white font-medium">
                     Contact
                   </a>
                 </Link>
@@ -65,7 +67,7 @@ export default function Header() {
       {/* Menu mobile */}
       <Transition show={navbarOpen} className="absolute w-full h-full">
         <div
-          className={`md:hidden bg-background-purple bg-opacity-40 backdrop-blur-sm z-0 w-full header-dropdown`}
+          className="md:hidden bg-background-purple bg-opacity-40 backdrop-blur-sm z-0 w-full header-dropdown"
           onClick={() => {
             setNavbarOpen(false);
           }}
@@ -80,7 +82,7 @@ export default function Header() {
             leaveTo="-translate-y-full"
           >
             <div>
-              <div className={`md:hidden`} id="mobile-menu">
+              <div className="md:hidden" id="mobile-menu">
                 <div
                   id="sub-header"
                   className="flex flex-col px-2 pb-2 space-y-1 rounded-b-lg"
