@@ -3,30 +3,30 @@
 @tailwind utilities;
 
 body {
-	background: linear-gradient(
-			153deg,
-			rgb(26, 8, 66) 0%,
-			rgb(15, 6, 32) 28%,
-			rgb(27, 5, 26) 100%
-		)
-		fixed;
+  background: linear-gradient(
+      153deg,
+      rgb(26, 8, 66) 0%,
+      rgb(15, 6, 32) 28%,
+      rgb(27, 5, 26) 100%
+    )
+    fixed;
 }
 
 #header {
-	background: linear-gradient(
-			153deg,
-			rgb(26, 8, 66) 0%,
-			rgb(15, 6, 32) 28%,
-			rgb(27, 5, 26) 100%
-		)
-		fixed;
+  background: linear-gradient(
+      153deg,
+      rgb(26, 8, 66) 0%,
+      rgb(15, 6, 32) 28%,
+      rgb(27, 5, 26) 100%
+    )
+    fixed;
 }
 
 #sub-header {
-	background: linear-gradient(153deg, rgb(17, 5, 42) 0%, rgb(15, 6, 32) 28%)
-		fixed;
+  background: linear-gradient(153deg, rgb(17, 5, 42) 0%, rgb(15, 6, 32) 28%)
+    fixed;
 }
 
 .header-dropdown {
-	height: 100vh;
+  height: 100vh;
 }
