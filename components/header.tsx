@@ -6,7 +6,7 @@ export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav id="header" className="fixed w-full z-50">
+    <nav id="header" className="w-full z-50">
       <div id="header" className="relative px-5 sm:px-6 md:px-8 z-50">
         <div className="relative flex items-center justify-between h-20 z-50">
           <div className="flex items-center w-full z-50">
