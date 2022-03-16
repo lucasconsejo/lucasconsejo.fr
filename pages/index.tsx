@@ -20,6 +20,7 @@ export default function Home() {
               <a
                 href="https://www.cdiscount.com/"
                 target="_blank"
+                rel="noreferrer"
                 className="block typewriter text-orange-cds hover:underline"
               >
                 @cdiscount.
