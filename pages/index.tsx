@@ -16,7 +16,7 @@ export default function Home() {
               Lucas Consejo
             </h1>
             <div className="flex flex-col items-center sm:flex-row font-medium text-xl sm:text-2xl space-x-1 whitespace-nowrap">
-              <h2 className="text-left">Ingénieur d'étude - Développeur</h2>
+              <h2 className="text-left">Ingénieur d&#39;étude - Développeur</h2>
               <a
                 href="https://www.cdiscount.com/"
                 target="_blank"
