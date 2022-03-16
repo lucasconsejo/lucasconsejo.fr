@@ -10,8 +10,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        background: {
-          purple: "rgb(15, 6, 32)",
+        orange: {
+          cds: "#e13a07",
         },
       },
     },

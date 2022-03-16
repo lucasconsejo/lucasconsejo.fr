@@ -1,20 +1,34 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
+import useScroll from "hooks/useScroll";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const [scroll] = useScroll();
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    if (scroll > 0) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  }, [scroll]);
 
   return (
-    <nav id="header" className="w-full z-50">
-      <div id="header" className="relative px-5 sm:px-6 md:px-8 z-50">
+    <nav
+      className={`fixed w-full z-50 border-b bg-black bg-opacity-20 border-white/10 backdrop-blur-sm md:bg-transparent md:border-0 md:backdrop-blur-none ${
+        show &&
+        "md:border-b md:bg-black md:bg-opacity-20 md:border-white/10 md:backdrop-blur-sm"
+      }`}
+    >
+      <div className="relative px-5 sm:px-6 md:px-8 z-50">
         <div className="relative flex items-center justify-between h-20 z-50">
           <div className="flex items-center w-full z-50">
             <Link href="/" passHref>
               <a className="flex-shrink-0">
-                <h1 className="text-white text-xl font-medium">
-                  Lucas Consejo
-                </h1>
+                <h1 className="text-white text-2xl font-medium">LC</h1>
               </a>
             </Link>
             <div className="hidden md:block w-full">
@@ -65,45 +79,42 @@ export default function Header() {
       </div>
 
       {/* Menu mobile */}
-      <Transition show={navbarOpen} className="absolute w-full h-full">
+      <Transition show={navbarOpen} className="w-full h-full">
         <div
-          className="md:hidden bg-background-purple bg-opacity-40 backdrop-blur-sm z-0 w-full header-dropdown"
+          className="md:hidden w-full"
           onClick={() => {
             setNavbarOpen(false);
           }}
           id="mobile-menu"
         >
           <Transition.Child
-            enter="transition ease-in-out duration-500 transform"
-            enterFrom="-translate-y-full"
-            enterTo="translate-y-0"
-            leave="transition ease-in-out duration-500 transform"
-            leaveFrom="translate-y-0"
-            leaveTo="-translate-y-full"
+            enter="transition ease-out duration-100"
+            enterFrom="transform opacity-0 scale-95"
+            enterTo="transform opacity-100 scale-100"
+            leave="transition ease-in duration-75"
+            leaveFrom="transform opacity-100 scale-100"
+            leaveTo="transform opacity-0 scale-95"
           >
             <div>
               <div className="md:hidden" id="mobile-menu">
-                <div
-                  id="sub-header"
-                  className="flex flex-col px-2 pb-2 space-y-1 rounded-b-lg"
-                >
+                <div className="flex flex-col px-2 pb-2 space-y-5 py-5 rounded-b-lg border-y bg-opacity-20 border-white/10">
                   <Link href="/a-propos" passHref>
-                    <a className="text-gray-300 hover:text-white px-3 py-2 font-medium">
+                    <a className="text-xl text-gray-300 hover:text-white px-3 font-medium">
                       À propos
                     </a>
                   </Link>
                   <Link href="/carriere" passHref>
-                    <a className="text-gray-300 hover:text-white px-3 py-2 font-medium">
+                    <a className="text-xl text-gray-300 hover:text-white px-3 font-medium">
                       Carrière
                     </a>
                   </Link>
                   <Link href="/projets" passHref>
-                    <a className="text-gray-300 hover:text-white px-3 py-2 font-medium">
+                    <a className="text-xl text-gray-300 hover:text-white px-3 font-medium">
                       Projets
                     </a>
                   </Link>
                   <Link href="/contact" passHref>
-                    <a className="text-gray-300 hover:text-white px-3 py-2 font-medium">
+                    <a className="text-xl text-gray-300 hover:text-white px-3 pb-5 font-medium">
                       Contact
                     </a>
                   </Link>

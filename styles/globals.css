@@ -2,31 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body {
   background: linear-gradient(
       153deg,
       rgb(26, 8, 66) 0%,
       rgb(15, 6, 32) 28%,
-      rgb(27, 5, 26) 100%
+      rgb(44, 10, 42) 100%
     )
     fixed;
-}
-
-#header {
-  background: linear-gradient(
-      153deg,
-      rgb(26, 8, 66) 0%,
-      rgb(15, 6, 32) 28%,
-      rgb(27, 5, 26) 100%
-    )
-    fixed;
-}
-
-#sub-header {
-  background: linear-gradient(153deg, rgb(17, 5, 42) 0%, rgb(15, 6, 32) 28%)
-    fixed;
+  background-color: rgb(26, 8, 66);
 }
 
 .header-dropdown {
   height: 100vh;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid #e13a07;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing-mobile 1s steps(20, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@media (min-width: 640px) {
+  .typewriter {
+    animation: typing 3.5s steps(40, end) infinite alternate,
+      blink-caret 0.75s step-end infinite;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-mobile {
+  from {
+    width: 0;
+  }
+  to {
+    width: 120px;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #e13a07;
+  }
 }

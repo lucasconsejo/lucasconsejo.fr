@@ -11,7 +11,7 @@ export default function Metas({ title, description }: MetasProps) {
       <title>{title}</title>
       <meta name="description" content={description ?? description} />
       <link rel="icon" href="/favicon.ico" />
-      <meta name="theme-color" content="rgb(26, 8, 66)"></meta>
+      <meta name="theme-color" content="rgb(16, 5, 36)"></meta>
     </Head>
   );
 }
