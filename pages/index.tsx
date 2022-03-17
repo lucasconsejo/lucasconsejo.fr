@@ -126,7 +126,7 @@ export default function Home() {
             </h3>
             <p className="text-md  text-gray-800 py-4">
               Je suis bon public, que ce soit en solo ou en multi, jeux indés ou
-              triple A, je peux y passer pas mal d'heures dessus. Préférence
+              triple A, je peux y passer pas mal d&#39;heures dessus. Préférence
               pour les{" "}
               <a
                 href="https://www.youtube.com/watch?v=jPlWnCE4Edo"
