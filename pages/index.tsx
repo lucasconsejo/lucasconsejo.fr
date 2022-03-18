@@ -31,14 +31,14 @@ export default function Home() {
         <div className="relative w-36 h-36 sm:w-64 sm:h-64"></div>
       </div>
       <div className="bg-white bg-opacity-5" style={{ marginTop: "10vh" }}>
-        <div className="text-center w-full mx-auto pt-12 px-4 sm:px-6 lg:pt-16 lg:px-8 z-20">
+        <div className="text-center w-full pt-12 px-4 sm:px-6 lg:pt-16 lg:px-8 z-20">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             <span className="block">À propos</span>
-            <span className="block text-red-400">Ce qui me passionne</span>
+            <span className="block text-purple-400">Ce qui me passionne</span>
           </h2>
         </div>
-        <div className="sm:flex flex-wrap justify-center items-center text-center gap-8 pb-16">
-          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 bg-black mt-6 shadow-lg rounded-lg">
+        <div className="sm:flex flex-wrap justify-center items-center text-center gap-8 pb-16 pt-5">
+          <div className="w-10/12 sm:w-1/2 lg:w-1/4 p-4 mx-auto bg-black mt-6 shadow-lg rounded-lg">
             <div className="flex-shrink-0">
               <div className="flex items-center mx-auto justify-center h-12 w-12 rounded-md bg-white text-black">
                 <svg
@@ -71,7 +71,7 @@ export default function Home() {
               ? Wow, il était incroyable ! 🤩
             </p>
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 mt-6 sm:mt-16 md:mt-20 lg:mt-24 bg-white shadow-lg rounded-lg">
+          <div className="w-10/12 sm:w-1/2 lg:w-1/4 p-4 mx-auto mt-6 lg:mt-24 bg-white shadow-lg rounded-lg">
             <div className="flex-shrink-0">
               <div className="flex items-center mx-auto justify-center h-12 w-12 rounded-md bg-black text-white">
                 <svg
@@ -92,22 +92,21 @@ export default function Home() {
             </h3>
             <p className="text-md text--gray-800 py-4">
               Passionné depuis le collège, je me suis vite autoformé puis
-              inscrit pour un master expert informatique pour enfin en faire mon
-              métier. Je compte bientôt changer de{" "}
+              inscrit pour un master expert informatique pour enfin en faire mon{" "}
               <a
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 target="_blank"
                 rel="noreferrer"
                 className="underline font-bold text-black hover:text-red-400"
               >
-                voie
+                métier
               </a>
               . 🤭
             </p>
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mt-6  px-4 py-4 bg-red-400 shadow-lg rounded-lg">
+          <div className="w-10/12 sm:w-1/2 lg:w-1/4 mt-6 p-4 mx-auto bg-purple-400 shadow-lg rounded-lg">
             <div className="flex-shrink-0">
-              <div className="flex items-center mx-auto justify-center h-12 w-12 rounded-md bg-black text-white">
+              <div className="flex items-center mx-auto justify-center h-12 w-12 rounded-md bg-black text-purple-400">
                 <svg
                   width="20"
                   height="20"
