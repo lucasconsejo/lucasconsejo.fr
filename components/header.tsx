@@ -34,22 +34,22 @@ export default function Header() {
             <div className="hidden md:block w-full">
               <div className="flex justify-end space-x-8">
                 <Link href="/a-propos" passHref>
-                  <a className="text-gray-300 hover:text-white font-medium">
+                  <a className="text-gray-200 hover:text-white font-medium">
                     À propos
                   </a>
                 </Link>
                 <Link href="/carriere" passHref>
-                  <a className="text-gray-300 hover:text-white font-medium">
+                  <a className="text-gray-200 hover:text-white font-medium">
                     Carrière
                   </a>
                 </Link>
                 <Link href="/projets" passHref>
-                  <a className="text-gray-300 hover:text-white font-medium">
+                  <a className="text-gray-200 hover:text-white font-medium">
                     Projets
                   </a>
                 </Link>
                 <Link href="/contact" passHref>
-                  <a className="text-gray-300 hover:text-white font-medium">
+                  <a className="text-gray-200 hover:text-white font-medium">
                     Contact
                   </a>
                 </Link>
@@ -60,7 +60,7 @@ export default function Header() {
           {/* Icon menu mobile */}
           <div className="-mr-2 flex md:hidden">
             <button
-              className="text-gray-300 hover:text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+              className="text-gray-200 hover:text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               <svg
@@ -99,22 +99,22 @@ export default function Header() {
               <div className="md:hidden" id="mobile-menu">
                 <div className="flex flex-col px-2 pb-2 space-y-5 py-5 rounded-b-lg border-y bg-opacity-20 border-white/10">
                   <Link href="/a-propos" passHref>
-                    <a className="text-xl text-gray-300 hover:text-white px-3 font-medium">
+                    <a className="text-xl text-gray-200 hover:text-white px-3 font-medium">
                       À propos
                     </a>
                   </Link>
                   <Link href="/carriere" passHref>
-                    <a className="text-xl text-gray-300 hover:text-white px-3 font-medium">
+                    <a className="text-xl text-gray-200 hover:text-white px-3 font-medium">
                       Carrière
                     </a>
                   </Link>
                   <Link href="/projets" passHref>
-                    <a className="text-xl text-gray-300 hover:text-white px-3 font-medium">
+                    <a className="text-xl text-gray-200 hover:text-white px-3 font-medium">
                       Projets
                     </a>
                   </Link>
                   <Link href="/contact" passHref>
-                    <a className="text-xl text-gray-300 hover:text-white px-3 pb-5 font-medium">
+                    <a className="text-xl text-gray-200 hover:text-white px-3 pb-5 font-medium">
                       Contact
                     </a>
                   </Link>
