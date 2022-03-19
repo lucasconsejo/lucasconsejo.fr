@@ -27,7 +27,7 @@ export default function TechnoIcon({
           className ? className : "lg:w-16 lg:h-16"
         }`}
       >
-        <Image src={src} layout="fill" objectFit="contain" />
+        <Image src={src} layout="fill" objectFit="contain" alt="techno icon" />
       </a>
       <div
         id={id}

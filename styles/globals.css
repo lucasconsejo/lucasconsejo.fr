@@ -21,6 +21,10 @@ body {
   height: 100vh;
 }
 
+#intro {
+  height: 90vh;
+}
+
 .typewriter {
   overflow: hidden;
   border-right: 0.15em solid #e13a07;

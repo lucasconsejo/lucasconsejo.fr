@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import type { ReactElement, ReactNode } from "react";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
+import Script from "next/script";
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -17,5 +18,13 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     "color: white; font-size: 13px"
   );
   const getLayout = Component.getLayout || ((page) => page);
-  return getLayout(<Component {...pageProps} />);
+  return getLayout(
+    <>
+      <Script
+        src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"
+        strategy="beforeInteractive"
+      ></Script>
+      <Component {...pageProps} />
+    </>
+  );
 }

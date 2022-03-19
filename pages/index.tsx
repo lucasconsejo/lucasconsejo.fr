@@ -9,8 +9,8 @@ export default function Home() {
       <Metas title="Lucas Consejo | Ingénieur d'étude - Développeur Cdiscount" />
 
       <div
+        id="intro"
         className="flex flex-col justify-start items-center sm:flex-row sm:justify-around w-full pt-36 sm:pt-0"
-        style={{ height: "90vh" }}
       >
         <div className="space-y-4 order-last sm:order-first mt-5 sm:mt-0">
           <div className="text-white space-y-2">
