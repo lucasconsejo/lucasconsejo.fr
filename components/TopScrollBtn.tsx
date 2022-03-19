@@ -23,7 +23,7 @@ export default function TopScrollBtn() {
 
   return (
     <div
-      className={`${show} bottom-6 right-6 bg-black text-white rounded-full p-1 drop-shadow-xl cursor-pointer`}
+      className={`${show} bottom-6 right-6 bg-black text-white rounded-full p-1 drop-shadow-xl cursor-pointer transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200`}
       onClick={handleClick}
     >
       <svg className="w-8 h-8" viewBox="0 0 24 24">
