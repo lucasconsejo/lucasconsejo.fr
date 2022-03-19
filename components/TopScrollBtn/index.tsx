@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useScroll from "../hooks/useScroll";
+import useScroll from "hooks/useScroll";
 
 export default function TopScrollBtn() {
   const [scroll] = useScroll();

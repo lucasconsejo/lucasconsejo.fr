@@ -1,9 +1,5 @@
-import Metas from "components/metas";
-import Layout from "components/layout";
 import { ReactElement } from "react";
-import Introduction from "components/Introduction";
-import About from "components/About";
-import Technologies from "components/Technologies";
+import { Metas, Layout, Introduction, About, Technologies } from "components";
 
 export default function Home() {
   return (

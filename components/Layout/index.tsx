@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "./header";
-import TopScrollBtn from "./TopScrollBtn";
+import { Header, TopScrollBtn } from "components";
 
 type LayoutProps = {
   children: React.ReactNode;
