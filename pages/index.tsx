@@ -1,11 +1,13 @@
 import Metas from "components/metas";
 import Layout from "components/layout";
 import { ReactElement } from "react";
+import TechnoIcon from "components/TechnoIcon";
 
 export default function Home() {
   return (
     <div>
-      <Metas title="Lucas Consejo | Développeur web et mobile" />
+      <Metas title="Lucas Consejo | Ingénieur d'étude - Développeur Cdiscount" />
+
       <div
         className="flex flex-col justify-start items-center sm:flex-row sm:justify-around w-full pt-36 sm:pt-0"
         style={{ height: "90vh" }}
@@ -30,6 +32,7 @@ export default function Home() {
         </div>
         <div className="relative w-36 h-36 sm:w-64 sm:h-64"></div>
       </div>
+
       <div className="bg-white bg-opacity-5" style={{ marginTop: "10vh" }}>
         <div className="text-center w-full pt-12 px-4 sm:px-6 lg:pt-16 lg:px-8 z-20">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
@@ -138,6 +141,87 @@ export default function Home() {
               . 😏
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="">
+        <div className="text-center w-full pt-12 px-4 sm:px-6 lg:pt-16 lg:px-8 z-20">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+            <span className="block">Technologies</span>
+            <span className="block text-purple-400 text-2xl md:text-4xl">
+              Ce que je maîtrise le mieux
+            </span>
+          </h2>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center md:justify-between w-full max-w-4xl mx-auto pt-4 sm:my-10">
+          <TechnoIcon
+            id="reactjs"
+            src="/img/logo/react.webp"
+            url="https://fr.reactjs.org/"
+          >
+            React JS et React Native
+          </TechnoIcon>
+
+          <TechnoIcon
+            id="csharp"
+            src="/img/logo/csharp.png"
+            url="https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/"
+          >
+            C#
+          </TechnoIcon>
+
+          <TechnoIcon
+            id="js"
+            src="/img/logo/javascript.png"
+            url="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+            className="lg:w-11 lg:h-11"
+          >
+            Javascript
+          </TechnoIcon>
+
+          <TechnoIcon
+            id="ts"
+            src="/img/logo/typescript.svg"
+            url="https://www.typescriptlang.org/"
+            className="lg:w-11 lg:h-11"
+          >
+            Typescript
+          </TechnoIcon>
+
+          <TechnoIcon
+            id="nodejs"
+            src="/img/logo/nodejs.png"
+            url="https://nodejs.org/fr/"
+            className="lg:w-20 lg:h-20"
+          >
+            Node JS
+          </TechnoIcon>
+
+          <TechnoIcon
+            id="nextjs"
+            src="/img/logo/nextjs.png"
+            url="https://nextjs.org/"
+          >
+            Next JS
+          </TechnoIcon>
+
+          <TechnoIcon
+            id="tailwind"
+            src="/img/logo/tailwind.png"
+            url="https://tailwindcss.com/"
+          >
+            Tailwind CSS
+          </TechnoIcon>
+
+          <TechnoIcon
+            id="styled-components"
+            src="/img/logo/styled-components.png"
+            url="https://styled-components.com/"
+            className="w-20 h-20 lg:w-20 lg:h-20"
+          >
+            Styled-components
+          </TechnoIcon>
         </div>
       </div>
     </div>
