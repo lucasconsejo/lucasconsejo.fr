@@ -4,14 +4,16 @@ type TechnoIconProps = {
   id: string;
   src: string;
   url: string;
+  grayscale?: boolean;
   className?: string;
   children: React.ReactNode;
 };
 
-export default function TechnoIcon({
+export default function TechnoLogo({
   id,
   src,
   url,
+  grayscale,
   className,
   children,
 }: TechnoIconProps) {
@@ -25,7 +27,7 @@ export default function TechnoIcon({
         data-tooltip-placement="bottom"
         className={`text-white relative m-4 text-center transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200 w-10 h-10 ${
           className ? className : "lg:w-16 lg:h-16"
-        }`}
+        } ${grayscale ? "grayscale hover:grayscale-0" : "grayscale-0"}`}
       >
         <Image src={src} layout="fill" objectFit="contain" alt="techno icon" />
       </a>
