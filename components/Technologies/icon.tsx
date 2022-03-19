@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-type TechnoIconProps = {
+type IconProps = {
   id: string;
   src: string;
   url: string;
@@ -9,14 +9,14 @@ type TechnoIconProps = {
   children: React.ReactNode;
 };
 
-export default function TechnoLogo({
+export default function Icon({
   id,
   src,
   url,
   grayscale,
   className,
   children,
-}: TechnoIconProps) {
+}: IconProps) {
   return (
     <>
       <a
