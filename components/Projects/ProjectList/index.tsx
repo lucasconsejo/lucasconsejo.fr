@@ -219,6 +219,7 @@ export default function ProjectList() {
         <div className="items-center justify-center space-x-3 hidden md:flex">
           {projects.map((item, index) => (
             <div
+              key={index}
               onClick={() => handleProject(index)}
               className={`cursor-pointer w-4 h-4 rounded-full ${
                 projectIndex === index
