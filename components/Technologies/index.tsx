@@ -80,7 +80,7 @@ export default function Technologies() {
         <div className="h-px flex-grow bg-white/20"></div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mx-auto mb-20">
+      <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mx-auto sm:mb-20">
         <Icon
           id="kubernetes"
           grayscale

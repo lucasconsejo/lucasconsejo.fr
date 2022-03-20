@@ -2,8 +2,8 @@ import { Title } from "components";
 
 export default function Career() {
   return (
-    <div className="h-screen mb-40 sm:mb-10 md:mb-0">
-      <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around lg:justify-center lg:space-x-12 mt-0 md:pt-10">
+    <div>
+      <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around lg:justify-center lg:space-x-12 md:pt-10">
         <div>
           <Title
             title="Carrière"
@@ -12,7 +12,7 @@ export default function Career() {
             className="pt-0 sm:pt-0 md:pt-0 lg:pt-0"
           />
         </div>
-        <ol className="relative border-l border-purple-900 my-12 md:my-0 w-10/12 md:w-7/12 lg:w-5/12">
+        <ol className="relative border-l border-purple-900 mt-12 md:my-0 w-11/12 md:w-7/12 lg:w-5/12">
           <li className="mb-10 ml-4">
             <div className="absolute w-3 h-3 border-purple-900 bg-purple-700 rounded-full -left-1.5 border"></div>
             <time className="mb-1 text-sm font-normal leading-none text-purple-400">
