@@ -2,7 +2,7 @@ import { Title } from "components";
 
 export default function Career() {
   return (
-    <div className="h-screen">
+    <div className="h-screen mb-40 sm:mb-10 md:mb-0">
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around lg:justify-center lg:space-x-12 mt-0 md:pt-10">
         <div>
           <Title

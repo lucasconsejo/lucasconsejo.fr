@@ -7,3 +7,4 @@ export { default as Introduction } from "./Introduction";
 export { default as About } from "./About";
 export { default as Technologies } from "./Technologies";
 export { default as Career } from "./Career";
+export { default as Projects } from "./Projects";

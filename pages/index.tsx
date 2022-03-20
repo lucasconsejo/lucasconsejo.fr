@@ -6,6 +6,7 @@ import {
   About,
   Technologies,
   Career,
+  Projects,
 } from "components";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <Technologies />
       <Career />
+      <Projects />
     </div>
   );
 }
