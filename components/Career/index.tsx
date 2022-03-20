@@ -19,7 +19,7 @@ export default function Career() {
               Octobre 2022
             </time>
             <h3 className="text-lg font-semibold text-white">
-              Ingénieur d'étude - Développeur à{" "}
+              Ingénieur d&#39;étude - Développeur à{" "}
               <a
                 href="https://www.cdiscount.com/"
                 target="_blank"
@@ -30,7 +30,7 @@ export default function Career() {
               </a>
             </h3>
             <p className="mb-4 text-base font-normal text-gray-400">
-              CDI dans l'équipe Recherche pour maintenir les différents
+              CDI dans l&#39;équipe Recherche pour maintenir les différents
               composants liés à la recherche (reranking produits, carousels
               produits, facets recherche, suggestion de la barre de
               recherche...).
@@ -53,8 +53,8 @@ export default function Career() {
               </a>
             </h3>
             <p className="text-base font-normal text-gray-400">
-              Alternance école/entreprise sur 3 ans dans l'équipe Recherche pour
-              maintenir les différents composants liés à la recherche.
+              Alternance école/entreprise sur 3 ans dans l&#39;équipe Recherche
+              pour maintenir les différents composants liés à la recherche.
             </p>
           </li>
           <li className="mb-10 ml-4">
@@ -74,7 +74,7 @@ export default function Career() {
               </a>
             </h3>
             <p className="text-base font-normal text-gray-400">
-              Stage de 2 mois dans l'équipe Recherche afin de migrer des
+              Stage de 2 mois dans l&#39;équipe Recherche afin de migrer des
               microservices Java 8 en Java 10, pour ensuite les migrer de Mesos
               vers Kubernetes.
             </p>
@@ -85,7 +85,7 @@ export default function Career() {
               Septembre 2017 - 2022
             </time>
             <h3 className="text-lg font-semibold text-white">
-              Master Expert informatique et systèmes d'information -{" "}
+              Master Expert informatique et systèmes d&#39;information -{" "}
               <a
                 href="https://www.ynov.com/formation/ynov-informatique/"
                 target="_blank"
