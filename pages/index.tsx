@@ -7,6 +7,7 @@ import {
   Technologies,
   Career,
   Projects,
+  Contact,
 } from "components";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Technologies />
       <Career />
       <Projects />
+      <Contact />
     </div>
   );
 }
