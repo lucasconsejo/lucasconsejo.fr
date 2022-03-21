@@ -2,7 +2,7 @@ import { Title } from "components";
 
 export default function Career() {
   return (
-    <div>
+    <div id="career">
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around lg:justify-center lg:space-x-12 md:pt-10 max-w-screen-2xl mx-auto">
         <div>
           <Title

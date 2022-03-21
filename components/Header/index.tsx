@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
-import Link from "next/link";
 import useScroll from "hooks/useScroll";
+import { Link, animateScroll } from "react-scroll";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -16,6 +16,10 @@ export default function Header() {
     }
   }, [scroll]);
 
+  const scrollToTop = () => {
+    animateScroll.scrollToTop();
+  };
+
   return (
     <nav
       className={`fixed w-full z-50 border-b bg-black bg-opacity-20 border-white/10 backdrop-blur-sm md:bg-transparent md:border-0 md:backdrop-blur-none ${
@@ -26,37 +30,68 @@ export default function Header() {
       <div className="relative px-5 sm:px-6 md:px-8 z-50">
         <div className="relative flex items-center justify-between h-20 z-50">
           <div className="flex items-center w-full z-50">
-            <Link href="/" passHref>
-              <a className="flex-shrink-0">
-                <h1 className="text-white text-2xl font-medium">LC</h1>
-              </a>
-            </Link>
+            <h1
+              onClick={scrollToTop}
+              className="text-white text-2xl font-medium cursor-pointer"
+            >
+              LC
+            </h1>
             <div className="hidden md:block w-full">
               <div className="flex justify-end space-x-8">
-                <Link href="/a-propos" passHref>
-                  <a className="text-gray-200 hover:text-white font-medium">
-                    À propos
-                  </a>
+                <Link
+                  className="text-gray-200 hover:text-white font-medium cursor-pointer"
+                  activeClass="text-purple-400 hover:text-white"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  À propos
                 </Link>
-                <Link href="/technologies" passHref>
-                  <a className="text-gray-200 hover:text-white font-medium">
-                    Technologies
-                  </a>
+                <Link
+                  className="text-gray-200 hover:text-white font-medium cursor-pointer"
+                  activeClass="text-purple-400 hover:text-white"
+                  to="technologies"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
+                  Technologies
                 </Link>
-                <Link href="/carriere" passHref>
-                  <a className="text-gray-200 hover:text-white font-medium">
-                    Carrière
-                  </a>
+                <Link
+                  className="text-gray-200 hover:text-white font-medium cursor-pointer"
+                  activeClass="text-purple-400 hover:text-white"
+                  to="career"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Carrière
                 </Link>
-                <Link href="/projets" passHref>
-                  <a className="text-gray-200 hover:text-white font-medium">
-                    Projets
-                  </a>
+                <Link
+                  className="text-gray-200 hover:text-white font-medium cursor-pointer"
+                  activeClass="text-purple-400 hover:text-white"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-20}
+                  duration={500}
+                >
+                  Projets
                 </Link>
-                <Link href="/contact" passHref>
-                  <a className="text-gray-200 hover:text-white font-medium">
-                    Contact
-                  </a>
+                <Link
+                  className="text-gray-200 hover:text-white font-medium cursor-pointer"
+                  activeClass="text-purple-400 hover:text-white"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Contact
                 </Link>
               </div>
             </div>
@@ -103,30 +138,64 @@ export default function Header() {
             <div>
               <div className="md:hidden" id="mobile-menu">
                 <div className="flex flex-col px-2 pb-2 space-y-5 py-5 rounded-b-lg border-y bg-opacity-20 border-white/10">
-                  <Link href="/a-propos" passHref>
-                    <a className="text-xl text-gray-200 hover:text-white px-3 font-medium">
-                      À propos
-                    </a>
+                  <Link
+                    onClick={() => setNavbarOpen(false)}
+                    className="text-xl text-gray-200 hover:text-white px-3 font-medium"
+                    activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    À propos
                   </Link>
-                  <Link href="/technologies" passHref>
-                    <a className="text-xl text-gray-200 hover:text-white px-3 font-medium">
-                      Technologies
-                    </a>
+                  <Link
+                    onClick={() => setNavbarOpen(false)}
+                    className="text-xl text-gray-200 hover:text-white px-3 font-medium"
+                    activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
+                    to="technologies"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Technologies
                   </Link>
-                  <Link href="/carriere" passHref>
-                    <a className="text-xl text-gray-200 hover:text-white px-3 font-medium">
-                      Carrière
-                    </a>
+                  <Link
+                    onClick={() => setNavbarOpen(false)}
+                    className="text-xl text-gray-200 hover:text-white px-3 font-medium"
+                    activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
+                    to="career"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Carrière
                   </Link>
-                  <Link href="/projets" passHref>
-                    <a className="text-xl text-gray-200 hover:text-white px-3 font-medium">
-                      Projets
-                    </a>
+                  <Link
+                    className="text-xl text-gray-200 hover:text-white px-3 font-medium"
+                    activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Projets
                   </Link>
-                  <Link href="/contact" passHref>
-                    <a className="text-xl text-gray-200 hover:text-white px-3 pb-5 font-medium">
-                      Contact
-                    </a>
+                  <Link
+                    onClick={() => setNavbarOpen(false)}
+                    className="text-xl text-gray-200 hover:text-white px-3 font-medium"
+                    activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Contact
                   </Link>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="bg-white bg-opacity-5">
+    <div id="contact" className="bg-white bg-opacity-5">
       <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
           <span className="block text-white">Contact</span>

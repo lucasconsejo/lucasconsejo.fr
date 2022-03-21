@@ -3,7 +3,7 @@ import Icon from "./icon";
 
 export default function Technologies() {
   return (
-    <div>
+    <div id="technologies">
       <Title title="Technologies" subTitle="Ce que je maîtrise le mieux" />
 
       <div className="flex flex-wrap items-center justify-center md:justify-between w-full max-w-4xl mx-auto pt-4 sm:mt-10">
