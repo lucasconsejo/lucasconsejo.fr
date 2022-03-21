@@ -1,5 +1,8 @@
 import { useState } from "react";
 import useInterval from "../../../hooks/useInterval";
+import { Pagination, Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import ProjectMobileItem from "../ProjectMobileItem";
 
 const projects = [
   {
@@ -94,7 +97,7 @@ const projects = [
     icon: "/img/logo/hmp.png",
     title: "Heal me please",
     description:
-      "Application web permettant d’aider les personnes souffrant de maux à identifier rapidement et simplement les symptômes d’une maladie. Une fois les symptômes connus du site, il leur sera proposé de prendre un rendez-vous chez un praticien de santé correspondant aux douleurs.",
+      "Application web permettant d’aider les personnes souffrant de maux à identifier rapidement et simplement les symptômes d’une maladie.",
     url: "",
     isStudentProject: true,
     technos: [
@@ -233,10 +236,39 @@ export default function ProjectList() {
     stopInterval();
   };
 
+  const projectsMobile = () => {
+    return (
+      <div className="flex mt-5 mb-5">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          slidesPerView={1}
+          slidesPerGroup={1}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+          }}
+          pagination={{ clickable: true }}
+          className="swiper-projects z-0"
+        >
+          {projects.map((project, index) => (
+            <SwiperSlide key={index}>
+              {({ isActive }) => (
+                <div className="text-white">
+                  Current slide is {isActive ? "active" : "not active"}
+                </div>
+              )}
+              <ProjectMobileItem project={project} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    );
+  };
+
   return (
     <div>
       <div
-        className="w-11/12 sm:max-w-screen-xl mx-auto rounded-lg mt-12"
+        className="w-11/12 sm:max-w-screen-xl mx-auto rounded-lg mt-12 hidden md:block"
         style={{
           background:
             "radial-gradient(ellipse at top, rgba(41,41,46,1) 0%, rgba(25,25,28,1) 70%)",
@@ -295,7 +327,9 @@ export default function ProjectList() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center space-x-10 md:space-x-3 w-full max-w-4xl mx-auto mt-5 mb-20">
+      <div className="block md:hidden">{projectsMobile()}</div>
+
+      <div className="hidden md:flex items-center justify-center space-x-10 md:space-x-3 w-full max-w-4xl mx-auto mt-5 mb-20">
         <div
           className="text-gray-500 mx-2 hover:text-purple-500 cursor-pointer"
           onClick={previousProject}
@@ -311,7 +345,7 @@ export default function ProjectList() {
             ></path>
           </svg>
         </div>
-        <div className="items-center justify-center space-x-3 hidden md:flex">
+        <div className="items-center justify-center space-x-3 md:flex">
           {projects.map((item, index) => (
             <div
               key={index}

@@ -1,3 +1,5 @@
+import "swiper/css";
+import "swiper/css/pagination";
 import "../styles/globals.css";
 import type { ReactElement, ReactNode } from "react";
 import type { NextPage } from "next";
