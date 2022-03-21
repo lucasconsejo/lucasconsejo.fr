@@ -2,7 +2,7 @@ import Hobby from "../Hobby";
 
 export default function HobbyList() {
   return (
-    <div className="sm:flex flex-wrap justify-center items-center text-center gap-8 pb-16 pt-5">
+    <div className="sm:flex flex-wrap max-w-screen-2xl mx-auto justify-center items-center text-center gap-8 pb-16 pt-5">
       <Hobby title="Cinéma" icon="movie" theme="dark">
         <p className="text-md text-gray-200 py-4">
           Depuis la réouverture des cinémas après le confinement, je vais 2 à 3
