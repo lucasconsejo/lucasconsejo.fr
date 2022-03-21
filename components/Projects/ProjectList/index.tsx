@@ -81,6 +81,15 @@ const projects = [
     technos: ["React JS", "Gitlab CI/CD"],
   },
   {
+    img: "/img/projects/lucasconsejo.png",
+    icon: "/favicon.ico",
+    title: "lucasconsejo",
+    description: "Portfolio que vous êtes en train de consulter.",
+    url: "https://lucasconsejo.fr",
+    isStudentProject: false,
+    technos: ["Next JS", "Typescript", "Gitlab CI/CD"],
+  },
+  {
     img: "/img/projects/hmp.png",
     icon: "/img/logo/hmp.png",
     title: "Heal me please",
