@@ -32,8 +32,8 @@ export default function Career() {
             <p className="mb-4 text-base font-normal text-gray-400">
               CDI dans l&#39;équipe Recherche pour maintenir les différents
               composants liés à la recherche (reranking produits, carousels
-              suggestion de produits pour cross-sell/up-sell, facets recherche, suggestion de la barre de
-              recherche...).
+              suggestion de produits pour cross-sell/up-sell, facets recherche,
+              suggestion de la barre de recherche...).
             </p>
           </li>
           <li className="mb-10 ml-4">
