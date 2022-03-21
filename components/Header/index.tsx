@@ -38,6 +38,11 @@ export default function Header() {
                     À propos
                   </a>
                 </Link>
+                <Link href="/technologies" passHref>
+                  <a className="text-gray-200 hover:text-white font-medium">
+                    Technologies
+                  </a>
+                </Link>
                 <Link href="/carriere" passHref>
                   <a className="text-gray-200 hover:text-white font-medium">
                     Carrière
@@ -101,6 +106,11 @@ export default function Header() {
                   <Link href="/a-propos" passHref>
                     <a className="text-xl text-gray-200 hover:text-white px-3 font-medium">
                       À propos
+                    </a>
+                  </Link>
+                  <Link href="/technologies" passHref>
+                    <a className="text-xl text-gray-200 hover:text-white px-3 font-medium">
+                      Technologies
                     </a>
                   </Link>
                   <Link href="/carriere" passHref>
