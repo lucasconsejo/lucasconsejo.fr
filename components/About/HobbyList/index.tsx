@@ -11,7 +11,7 @@ export default function HobbyList() {
             href="https://www.youtube.com/watch?v=hWRSJlp50rQ"
             target="_blank"
             rel="noreferrer"
-            className="underline font-bold text-white hover:text-red-400"
+            className="underline font-bold text-white hover:text-purple-400"
           >
             The Batman
           </a>{" "}
@@ -27,7 +27,7 @@ export default function HobbyList() {
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             target="_blank"
             rel="noreferrer"
-            className="underline font-bold text-black hover:text-red-400"
+            className="underline font-bold text-black hover:text-purple-400"
           >
             métier
           </a>
@@ -44,7 +44,7 @@ export default function HobbyList() {
             href="https://www.youtube.com/watch?v=jPlWnCE4Edo"
             target="_blank"
             rel="noreferrer"
-            className="underline font-bold text-black hover:text-gray-700"
+            className="underline font-bold text-black hover:text-purple-900"
           >
             Dark Souls
           </a>
