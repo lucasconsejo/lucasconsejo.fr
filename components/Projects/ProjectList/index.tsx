@@ -10,6 +10,14 @@ const projects = [
       "Site vitrine d'une pâtisserie artisale basé à Coimères en Gironde.",
     url: "https://www.nostetourtiere.com",
     isStudentProject: false,
+    technos: [
+      "Next JS",
+      "Typescript",
+      "Tailwind CSS",
+      "Gitlab CI/CD",
+      "Express JS",
+      "MongoDB",
+    ],
   },
   {
     img: "/img/projects/dashboard.png",
@@ -19,6 +27,14 @@ const projects = [
       "Application back-office pour le site nostetourtiere.com permettant d'éditer les textes et images sur le site.",
     url: "",
     isStudentProject: true,
+    technos: [
+      "React JS",
+      "Typescript",
+      "Tailwind CSS",
+      "Gitlab CI/CD",
+      "Express JS",
+      "MongoDB",
+    ],
   },
   {
     img: "/img/projects/reverse-eats.png",
@@ -28,6 +44,13 @@ const projects = [
       "Application iOS et Android pour commander un cuisinier à domicile afin qu'il prépare les plats choisis depuis votre cuisine.",
     url: "",
     isStudentProject: true,
+    technos: [
+      "React Native",
+      "Typescript",
+      "Gitlab CI/CD",
+      "NodeJS",
+      "Firebase",
+    ],
   },
   {
     img: "/img/projects/conore.png",
@@ -37,6 +60,15 @@ const projects = [
       "Application iOS et Android permettant de réserver des séances dans une salle de cross-fit.",
     url: "",
     isStudentProject: true,
+    technos: [
+      "React Native",
+      "Symfony",
+      "Stripe",
+      "MySQL",
+      "Gitlab CI/CD",
+      "Kubernetes",
+      "Grafana",
+    ],
   },
   {
     img: "/img/projects/react-svg-color.png",
@@ -46,6 +78,7 @@ const projects = [
       "Composant React JS disponible via NPM permettant de modifier les couleurs d'un fichier svg.",
     url: "https://www.npmjs.com/package/react-svg-color",
     isStudentProject: false,
+    technos: ["React JS", "Gitlab CI/CD"],
   },
   {
     img: "/img/projects/hmp.png",
@@ -55,6 +88,15 @@ const projects = [
       "Application web permettant d’aider les personnes souffrant de maux à identifier rapidement et simplement les symptômes d’une maladie. Une fois les symptômes connus du site, il leur sera proposé de prendre un rendez-vous chez un praticien de santé correspondant aux douleurs.",
     url: "",
     isStudentProject: true,
+    technos: [
+      "Next JS",
+      "Typescript",
+      "Nest JS",
+      "PostgreSQL",
+      "Gitlab CI/CD",
+      "Kubernetes",
+      "Grafana",
+    ],
   },
   {
     img: "/img/projects/wimm.png",
@@ -64,6 +106,7 @@ const projects = [
       "Application web permettant de suivre ses dépenses en connectant son compte en banque.",
     url: "",
     isStudentProject: true,
+    technos: ["React JS", "Typescript", "Laravel", "MySQL", "Gitlab CI/CD"],
   },
   {
     img: "/img/projects/reactly.png",
@@ -73,6 +116,24 @@ const projects = [
       "Application web mélangeant des fonctionnalités venant de Facebook, Jira et Microsoft Teams pour réaliser une application tout en un.",
     url: "",
     isStudentProject: true,
+    technos: [
+      "React JS",
+      "Typescript",
+      "Express JS",
+      "Firebase",
+      "MongoDB",
+      "Gitlab CI/CD",
+    ],
+  },
+  {
+    img: "/img/projects/abc.png",
+    icon: "/img/logo/react.webp",
+    title: "Entreprise ABC",
+    description:
+      "Site e-commerce de vente de meuble reprenant les fonctionnalités de IKEA. Le projet comprend également une application back-office pour éditer des produits parents/enfants.",
+    url: "",
+    isStudentProject: true,
+    technos: ["React JS", "Tailwind CSS", ".NET", "MongoDB", "Jenkins"],
   },
   {
     img: "/img/projects/player.png",
@@ -82,6 +143,7 @@ const projects = [
       "Application web reprenant les fonctionnalités du player Spotify.",
     url: "https://music-player-copperdev.vercel.app/",
     isStudentProject: false,
+    technos: ["React JS"],
   },
   {
     img: "/img/projects/calculatrice.png",
@@ -90,15 +152,25 @@ const projects = [
     description: "Application web d'un calculatrice",
     url: "https://calculator-copperdev.vercel.app/",
     isStudentProject: false,
+    technos: ["React JS"],
   },
   {
     img: "/img/projects/atoute.png",
-    icon: "/img/logo/atoute.png",
+    icon: "/img/logo/react.webp",
     title: "Atoute",
     description:
-      "Application web permettant la rencontre entre chercheurs d’emplois et des entreprises. Les chercheurs d’emplois peuveunt poster leur CV et les entreprises peuvent consulter et proposer une offre. Inversement, les entreprises peuvent poster des offres et les chercheurs d'emplois y répondre.",
+      "Application web permettant la rencontre entre chercheurs d’emplois et des entreprises.",
     url: "",
     isStudentProject: true,
+    technos: [
+      "React JS",
+      "Typescript",
+      "Symfony",
+      "MySQL",
+      "Gitlab CI/CD",
+      "Elasticsearch",
+      "Kibana",
+    ],
   },
   {
     img: "/img/projects/sospr.png",
@@ -108,6 +180,7 @@ const projects = [
       "Application web permettant la modification de son mot de passe de façon plus sécurisé avec un système de code généré et envoyer par SMS.",
     url: "",
     isStudentProject: true,
+    technos: ["Laravel", "Tailwind CSS", "Active Directory", "MySQL"],
   },
   {
     img: "/img/projects/sylab.png",
@@ -117,6 +190,7 @@ const projects = [
       "Site web permettant de consulter des offres de biens immobilier.",
     url: "",
     isStudentProject: true,
+    technos: ["Symfony", "Bootstrap", "MySQL"],
   },
 ];
 
@@ -181,21 +255,33 @@ export default function ProjectList() {
               {projects[projectIndex].title}
             </h2>
             <h4
-              className="text-md leading-relaxed mb-4"
+              className="text-md leading-relaxed"
               style={{ color: "#ababab", fontWeight: 400 }}
             >
               {projects[projectIndex].description}
             </h4>
-            {!projects[projectIndex].isStudentProject && (
-              <a
-                href={projects[projectIndex].url}
-                target="_blank"
-                rel="noreferrer"
-                className="bg-blue-600 text-white rounded-sm px-3 py-2 shadow-md"
-              >
-                Accéder au site
-              </a>
-            )}
+            <div className="flex flex-wrap mt-3">
+              {projects[projectIndex].technos.map((item, index) => (
+                <div
+                  key={index}
+                  className="text-gray-400 border border-gray-400 rounded px-2 mb-2 mr-3"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+            <div className="mt-10">
+              {!projects[projectIndex].isStudentProject && (
+                <a
+                  href={projects[projectIndex].url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-blue-600 text-white rounded-sm px-3 py-2 shadow-md"
+                >
+                  Accéder au site
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>
