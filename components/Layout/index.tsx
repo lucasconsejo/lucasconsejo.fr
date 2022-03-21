@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, TopScrollBtn } from "components";
+import { Header, TopScrollBtn, Footer } from "components";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -11,6 +11,7 @@ export default function Layout({ children }: LayoutProps) {
       <Header />
       <main>{children}</main>
       <TopScrollBtn />
+      <Footer />
     </>
   );
 }
