@@ -1,10 +1,10 @@
 import { Title } from "components";
 import Icon from "./icon";
 
-export default function Technologies() {
+export default function Skills() {
   return (
-    <div id="technologies">
-      <Title title="Technologies" subTitle="Ce que je maîtrise le mieux" />
+    <div id="skills">
+      <Title title="Compétences" subTitle="Ce que je maîtrise le mieux" />
 
       <div className="flex flex-wrap items-center justify-center md:justify-between w-full max-w-4xl mx-auto pt-4 sm:mt-10">
         <Icon
@@ -80,7 +80,7 @@ export default function Technologies() {
         <div className="h-px flex-grow bg-white/20"></div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mx-auto sm:mb-20">
+      <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mx-auto mb-3">
         <Icon
           id="kubernetes"
           grayscale
@@ -161,6 +161,15 @@ export default function Technologies() {
           className="lg:w-9 lg:h-9"
         >
           Sonarqube
+        </Icon>
+        <Icon
+          id="jest"
+          grayscale
+          src="/img/logo/jest.png"
+          url="https://jestjs.io/fr/"
+          className="lg:w-8 lg:h-8"
+        >
+          Jest
         </Icon>
         <Icon
           id="ansible"
@@ -287,6 +296,89 @@ export default function Technologies() {
           className="lg:w-9 lg:h-9"
         >
           Apache Solr
+        </Icon>
+        <Icon
+          id="figma"
+          grayscale
+          src="/img/logo/figma.png"
+          url="https://www.figma.com/"
+          className="lg:w-12 lg:h-12"
+        >
+          Figma
+        </Icon>
+        <Icon
+          id="jira"
+          grayscale
+          src="/img/logo/jira.png"
+          url="https://www.atlassian.com/fr/software/jira"
+          className="lg:w-9 lg:h-9"
+        >
+          Jira
+        </Icon>
+        <Icon
+          id="raspberry"
+          grayscale
+          src="/img/logo/raspberry.png"
+          url="https://www.raspberrypi.com/"
+          className="lg:w-10 lg:h-10"
+        >
+          Raspberry Pi
+        </Icon>
+        <Icon
+          id="arduino"
+          grayscale
+          src="/img/logo/arduino.png"
+          url="https://www.arduino.cc/"
+          className="lg:w-10 lg:h-10"
+        >
+          Arduino
+        </Icon>
+      </div>
+
+      <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mx-auto">
+        <div className="text-zinc-200 mx-2 bg-zinc-800/80 font-medium p-2.5 rounded leading-4 border border-1 border-zinc-700/70 shadow-[rgb(255,255,255,0.16)_0px_-1px_1px_inset] hover:bg-purple-700 cursor-default">
+          Méthode agile
+        </div>
+        <div className="text-zinc-200 mx-2 bg-zinc-800/80 font-medium p-2.5 rounded leading-4 border border-1 border-zinc-700/70 shadow-[rgb(255,255,255,0.16)_0px_-1px_1px_inset] hover:bg-purple-700 cursor-default">
+          Culture DevOps
+        </div>
+      </div>
+
+      <div className="flex items-center mt-10 mb-4 max-w-[16rem] w-full space-x-2 mx-auto">
+        <div className="h-px flex-grow bg-white/20"></div>
+        <div className="text-white/30 text-md font-medium uppercase">
+          Environnement
+        </div>
+        <div className="h-px flex-grow bg-white/20"></div>
+      </div>
+
+      <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mx-auto sm:mb-20">
+        <Icon
+          id="macos"
+          grayscale
+          src="/img/logo/apple.svg"
+          url="https://www.apple.com/fr/macos/monterey/"
+          className="lg:w-9 lg:h-9"
+        >
+          MacOS sur Macbook Pro perso
+        </Icon>
+        <Icon
+          id="windows"
+          grayscale
+          src="/img/logo/windows.png"
+          url="https://www.microsoft.com/fr-fr/software-download/windows10ISO?navItemId=daef1c13-0b0d-425e-905b-df14c9806f33"
+          className="lg:w-9 lg:h-9"
+        >
+          Windows 10 sur ordi perso/travail
+        </Icon>
+        <Icon
+          id="linux"
+          grayscale
+          src="/img/logo/linux.png"
+          url="https://www.linux.org/"
+          className="lg:w-10 lg:h-10"
+        >
+          Ubuntu/Debian/Raspbian sur serveur
         </Icon>
       </div>
     </div>

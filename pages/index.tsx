@@ -4,7 +4,7 @@ import {
   Layout,
   Introduction,
   About,
-  Technologies,
+  Skills,
   Career,
   Projects,
   Contact,
@@ -17,7 +17,7 @@ export default function Home() {
 
       <Introduction />
       <About />
-      <Technologies />
+      <Skills />
       <Career />
       <Projects />
       <Contact />

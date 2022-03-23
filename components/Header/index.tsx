@@ -52,13 +52,13 @@ export default function Header() {
                 <Link
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
                   activeClass="text-purple-400 hover:text-white"
-                  to="technologies"
+                  to="skills"
                   spy={true}
                   smooth={true}
                   offset={-80}
                   duration={500}
                 >
-                  Technologies
+                  Compétences
                 </Link>
                 <Link
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
@@ -154,13 +154,13 @@ export default function Header() {
                     onClick={() => setNavbarOpen(false)}
                     className="text-xl text-gray-200 hover:text-white px-3 font-medium"
                     activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
-                    to="technologies"
+                    to="skills"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
                   >
-                    Technologies
+                    Compétences
                   </Link>
                   <Link
                     onClick={() => setNavbarOpen(false)}
