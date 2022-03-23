@@ -42,7 +42,13 @@ body {
 
 .swiper-pagination {
   top: 2px;
-  z-index: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: unset;
 }
 
 .swiper-pagination-bullet {
