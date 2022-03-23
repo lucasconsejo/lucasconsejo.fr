@@ -175,6 +175,7 @@ export default function Header() {
                     Carrière
                   </Link>
                   <Link
+                    onClick={() => setNavbarOpen(false)}
                     className="text-xl text-gray-200 hover:text-white px-3 font-medium"
                     activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
                     to="projects"
