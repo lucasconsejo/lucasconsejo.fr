@@ -1,3 +1,5 @@
+import dayjs from "dayjs";
+
 const navigation = [
   {
     name: "Gitlab",
@@ -52,6 +54,7 @@ const navigation = [
 ];
 
 export default function Footer() {
+  const year = dayjs().format("YYYY");
   return (
     <footer className="mb-5 lg:mb-10 xl:mb-0">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
@@ -71,7 +74,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base text-gray-400">
-            &copy; 2022 Lucas Consejo. Tous droits réservés.
+            &copy; {year} Lucas Consejo. Tous droits réservés.
           </p>
         </div>
       </div>
