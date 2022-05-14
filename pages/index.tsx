@@ -13,7 +13,10 @@ import {
 export default function Home() {
   return (
     <div>
-      <Metas title="Lucas Consejo | Ingénieur d'étude - Développeur Cdiscount" />
+      <Metas 
+        title="Lucas Consejo | Ingénieur d'étude - Développeur Cdiscount"
+        description="Site porfolio de Lucas Consejo, développeur web & mobile."
+      />
 
       <Introduction />
       <About />
