@@ -10,6 +10,7 @@ module.exports = {
     "style",
     "ci",
     "perf",
+    "seo",
     "delete",
     "init",
     "merge",
