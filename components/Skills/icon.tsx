@@ -29,7 +29,7 @@ export default function Icon({
           className ? className : "lg:w-16 lg:h-16"
         } ${grayscale ? "grayscale hover:grayscale-0" : "grayscale-0"}`}
       >
-        <Image src={src} layout="fill" objectFit="contain" alt="techno icon" />
+        <Image src={src} layout="fill" objectFit="contain" alt="techno icon" priority={true} />
       </a>
       <div
         id={id}
