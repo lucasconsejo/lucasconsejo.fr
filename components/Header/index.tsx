@@ -107,6 +107,7 @@ export default function Header() {
             <button
               className="text-gray-200 hover:text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
               onClick={() => setNavbarOpen(!navbarOpen)}
+              aria-label="menu"
             >
               <svg
                 width="15"
