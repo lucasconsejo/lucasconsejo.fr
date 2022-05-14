@@ -23,7 +23,7 @@ export default function ProjectMobileItem({ project }: ProjectMobileItemProps) {
         <div className="slide-project rounded-t-lg rounded-b-none">
           <div className="py-10 px-8">
             <div className="place-self-center">
-              <img src={project.img} />
+              <img src={project.img} alt={project.title} />
             </div>
           </div>
         </div>
@@ -37,6 +37,7 @@ export default function ProjectMobileItem({ project }: ProjectMobileItemProps) {
                 display: "inline-block",
               }}
               src={project.icon}
+              alt={project.title}
             />
             {project.title}
           </h2>

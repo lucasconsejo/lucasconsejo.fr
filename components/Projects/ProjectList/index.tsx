@@ -278,7 +278,7 @@ export default function ProjectList() {
           <div className="slide-project rounded-t-lg rounded-b-none md:rounded-tr-none md:rounded-bl-lg">
             <div className="py-10 px-8">
               <div className="place-self-center">
-                <img src={projects[projectIndex].img} />
+                <img src={projects[projectIndex].img} alt={projects[projectIndex].title} />
               </div>
             </div>
           </div>
@@ -292,6 +292,7 @@ export default function ProjectList() {
                   display: "inline-block",
                 }}
                 src={projects[projectIndex].icon}
+                alt={projects[projectIndex].title}
               />
               {projects[projectIndex].title}
             </h2>
