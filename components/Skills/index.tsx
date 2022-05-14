@@ -17,7 +17,7 @@ export default function Skills() {
 
         <Icon
           id="csharp"
-          src="/img/logo/csharp.png"
+          src="/img/logo/csharp.webp"
           url="https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/"
         >
           C#
@@ -25,7 +25,7 @@ export default function Skills() {
 
         <Icon
           id="js"
-          src="/img/logo/javascript.png"
+          src="/img/logo/javascript.webp"
           url="https://developer.mozilla.org/fr/docs/Web/JavaScript"
           className="lg:w-11 lg:h-11"
         >
@@ -43,20 +43,20 @@ export default function Skills() {
 
         <Icon
           id="nodejs"
-          src="/img/logo/nodejs.png"
+          src="/img/logo/nodejs.webp"
           url="https://nodejs.org/fr/"
           className="lg:w-14 lg:h-14"
         >
           Node JS
         </Icon>
 
-        <Icon id="nextjs" src="/img/logo/nextjs.png" url="https://nextjs.org/">
+        <Icon id="nextjs" src="/img/logo/nextjs.webp" url="https://nextjs.org/">
           Next JS
         </Icon>
 
         <Icon
           id="tailwind"
-          src="/img/logo/tailwind.png"
+          src="/img/logo/tailwind.webp"
           url="https://tailwindcss.com/"
         >
           Tailwind CSS
@@ -64,7 +64,7 @@ export default function Skills() {
 
         <Icon
           id="styled-components"
-          src="/img/logo/styled-components.png"
+          src="/img/logo/styled-components.webp"
           url="https://styled-components.com/"
           className="w-20 h-20 lg:w-20 lg:h-20"
         >
@@ -84,7 +84,7 @@ export default function Skills() {
         <Icon
           id="kubernetes"
           grayscale
-          src="/img/logo/kubernetes.png"
+          src="/img/logo/kubernetes.webp"
           url="https://kubernetes.io/fr/"
           className="lg:w-9 lg:h-9"
         >
@@ -93,7 +93,7 @@ export default function Skills() {
         <Icon
           id="docker"
           grayscale
-          src="/img/logo/docker.png"
+          src="/img/logo/docker.webp"
           url="https://www.docker.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -102,7 +102,7 @@ export default function Skills() {
         <Icon
           id="docker-compose"
           grayscale
-          src="/img/logo/docker-compose.png"
+          src="/img/logo/docker-compose.webp"
           url="https://docs.docker.com/compose/"
           className="lg:w-9 lg:h-9"
         >
@@ -111,7 +111,7 @@ export default function Skills() {
         <Icon
           id="grafana"
           grayscale
-          src="/img/logo/grafana.png"
+          src="/img/logo/grafana.webp"
           url="https://grafana.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -120,7 +120,7 @@ export default function Skills() {
         <Icon
           id="kibana"
           grayscale
-          src="/img/logo/kibana.png"
+          src="/img/logo/kibana.webp"
           url="https://www.elastic.co/fr/kibana/"
           className="lg:w-9 lg:h-9"
         >
@@ -129,7 +129,7 @@ export default function Skills() {
         <Icon
           id="jenkins"
           grayscale
-          src="/img/logo/jenkins.png"
+          src="/img/logo/jenkins.webp"
           url="https://www.jenkins.io/"
           className="lg:w-9 lg:h-9"
         >
@@ -138,7 +138,7 @@ export default function Skills() {
         <Icon
           id="gitlab-cicd"
           grayscale
-          src="/img/logo/gitlab.png"
+          src="/img/logo/gitlab.webp"
           url="https://docs.gitlab.com/ee/ci/"
           className="lg:w-9 lg:h-9"
         >
@@ -147,7 +147,7 @@ export default function Skills() {
         <Icon
           id="git"
           grayscale
-          src="/img/logo/git.png"
+          src="/img/logo/git.webp"
           url="https://git-scm.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -156,7 +156,7 @@ export default function Skills() {
         <Icon
           id="sonar"
           grayscale
-          src="/img/logo/sonar.png"
+          src="/img/logo/sonar.webp"
           url="https://www.sonarqube.org/"
           className="lg:w-9 lg:h-9"
         >
@@ -165,7 +165,7 @@ export default function Skills() {
         <Icon
           id="jest"
           grayscale
-          src="/img/logo/jest.png"
+          src="/img/logo/jest.webp"
           url="https://jestjs.io/fr/"
           className="lg:w-8 lg:h-8"
         >
@@ -174,7 +174,7 @@ export default function Skills() {
         <Icon
           id="ansible"
           grayscale
-          src="/img/logo/ansible.png"
+          src="/img/logo/ansible.webp"
           url="https://docs.ansible.com/ansible/latest/index.html"
           className="lg:w-9 lg:h-9"
         >
@@ -183,7 +183,7 @@ export default function Skills() {
         <Icon
           id="vagrant"
           grayscale
-          src="/img/logo/vagrant.png"
+          src="/img/logo/vagrant.webp"
           url="https://www.vagrantup.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -192,7 +192,7 @@ export default function Skills() {
         <Icon
           id="azure"
           grayscale
-          src="/img/logo/azure.png"
+          src="/img/logo/azure.webp"
           url="https://azure.microsoft.com/fr-fr/"
           className="lg:w-9 lg:h-9"
         >
@@ -201,7 +201,7 @@ export default function Skills() {
         <Icon
           id="dotnet"
           grayscale
-          src="/img/logo/dotnet.png"
+          src="/img/logo/dotnet.webp"
           url="https://dotnet.microsoft.com/en-us/"
           className="lg:w-9 lg:h-9"
         >
@@ -210,7 +210,7 @@ export default function Skills() {
         <Icon
           id="laravel"
           grayscale
-          src="/img/logo/laravel.png"
+          src="/img/logo/laravel.webp"
           url="https://laravel.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -219,7 +219,7 @@ export default function Skills() {
         <Icon
           id="symfony"
           grayscale
-          src="/img/logo/symfony.png"
+          src="/img/logo/symfony.webp"
           url="https://symfony.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -228,7 +228,7 @@ export default function Skills() {
         <Icon
           id="mongo"
           grayscale
-          src="/img/logo/mongo.png"
+          src="/img/logo/mongo.webp"
           url="https://www.mongodb.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -237,7 +237,7 @@ export default function Skills() {
         <Icon
           id="firebase"
           grayscale
-          src="/img/logo/firebase.png"
+          src="/img/logo/firebase.webp"
           url="https://firebase.google.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -246,7 +246,7 @@ export default function Skills() {
         <Icon
           id="couchbase"
           grayscale
-          src="/img/logo/couchbase.png"
+          src="/img/logo/couchbase.webp"
           url="https://www.couchbase.com/fr"
           className="lg:w-9 lg:h-9"
         >
@@ -255,7 +255,7 @@ export default function Skills() {
         <Icon
           id="sqlserver"
           grayscale
-          src="/img/logo/sqlserver.png"
+          src="/img/logo/sqlserver.webp"
           url="https://www.microsoft.com/fr-fr/sql-server/"
           className="lg:w-9 lg:h-9"
         >
@@ -264,7 +264,7 @@ export default function Skills() {
         <Icon
           id="postgresql"
           grayscale
-          src="/img/logo/postgresql.png"
+          src="/img/logo/postgresql.webp"
           url="https://www.postgresql.org/"
           className="lg:w-9 lg:h-9"
         >
@@ -273,7 +273,7 @@ export default function Skills() {
         <Icon
           id="mysql"
           grayscale
-          src="/img/logo/mysql.png"
+          src="/img/logo/mysql.webp"
           url="https://www.mysql.com/fr/"
           className="lg:w-9 lg:h-9"
         >
@@ -282,7 +282,7 @@ export default function Skills() {
         <Icon
           id="kafka"
           grayscale
-          src="/img/logo/kafka.png"
+          src="/img/logo/kafka.webp"
           url="https://kafka.apache.org/"
           className="lg:w-9 lg:h-9"
         >
@@ -291,7 +291,7 @@ export default function Skills() {
         <Icon
           id="solr"
           grayscale
-          src="/img/logo/solr.png"
+          src="/img/logo/solr.webp"
           url="https://solr.apache.org/"
           className="lg:w-9 lg:h-9"
         >
@@ -300,7 +300,7 @@ export default function Skills() {
         <Icon
           id="figma"
           grayscale
-          src="/img/logo/figma.png"
+          src="/img/logo/figma.webp"
           url="https://www.figma.com/"
           className="lg:w-12 lg:h-12"
         >
@@ -309,7 +309,7 @@ export default function Skills() {
         <Icon
           id="jira"
           grayscale
-          src="/img/logo/jira.png"
+          src="/img/logo/jira.webp"
           url="https://www.atlassian.com/fr/software/jira"
           className="lg:w-9 lg:h-9"
         >
@@ -318,7 +318,7 @@ export default function Skills() {
         <Icon
           id="raspberry"
           grayscale
-          src="/img/logo/raspberry.png"
+          src="/img/logo/raspberry.webp"
           url="https://www.raspberrypi.com/"
           className="lg:w-10 lg:h-10"
         >
@@ -327,7 +327,7 @@ export default function Skills() {
         <Icon
           id="arduino"
           grayscale
-          src="/img/logo/arduino.png"
+          src="/img/logo/arduino.webp"
           url="https://www.arduino.cc/"
           className="lg:w-10 lg:h-10"
         >
@@ -365,7 +365,7 @@ export default function Skills() {
         <Icon
           id="windows"
           grayscale
-          src="/img/logo/windows.png"
+          src="/img/logo/windows.webp"
           url="https://www.microsoft.com/fr-fr/software-download/windows10ISO?navItemId=daef1c13-0b0d-425e-905b-df14c9806f33"
           className="lg:w-9 lg:h-9"
         >
@@ -374,7 +374,7 @@ export default function Skills() {
         <Icon
           id="linux"
           grayscale
-          src="/img/logo/linux.png"
+          src="/img/logo/linux.webp"
           url="https://www.linux.org/"
           className="lg:w-10 lg:h-10"
         >

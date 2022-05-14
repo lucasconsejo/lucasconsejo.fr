@@ -6,8 +6,8 @@ import ProjectMobileItem from "../ProjectMobileItem";
 
 const projects = [
   {
-    img: "/img/projects/nostetourtiere.png",
-    icon: "/img/logo/nostetourtiere.png",
+    img: "/img/projects/nostetourtiere.webp",
+    icon: "/img/logo/nostetourtiere.webp",
     title: "Noste Tourtière",
     description:
       "Site vitrine d'une pâtisserie artisale basé à Coimères en Gironde.",
@@ -23,7 +23,7 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/dashboard.png",
+    img: "/img/projects/dashboard.webp",
     icon: "/img/logo/dashboard.ico",
     title: "Dashboard - Noste Tourtière",
     description:
@@ -40,8 +40,8 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/reverse-eats.png",
-    icon: "/img/logo/reverse-eats.png",
+    img: "/img/projects/reverse-eats.webp",
+    icon: "/img/logo/reverse-eats.webp",
     title: "Reverse Eats",
     description:
       "Application iOS et Android pour commander un cuisinier à domicile afin qu'il prépare les plats choisis depuis votre cuisine.",
@@ -56,7 +56,7 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/conore.png",
+    img: "/img/projects/conore.webp",
     icon: "/img/logo/conore.svg",
     title: "Conore",
     description:
@@ -74,7 +74,7 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/react-svg-color.png",
+    img: "/img/projects/react-svg-color.webp",
     icon: "/img/logo/npm.svg",
     title: "react-svg-color",
     description:
@@ -84,7 +84,7 @@ const projects = [
     technos: ["React JS", "Gitlab CI/CD"],
   },
   {
-    img: "/img/projects/lucasconsejo.png",
+    img: "/img/projects/lucasconsejo.webp",
     icon: "/favicon.ico",
     title: "lucasconsejo",
     description: "Portfolio que vous êtes en train de consulter.",
@@ -93,8 +93,8 @@ const projects = [
     technos: ["Next JS", "Typescript", "Gitlab CI/CD"],
   },
   {
-    img: "/img/projects/hmp.png",
-    icon: "/img/logo/hmp.png",
+    img: "/img/projects/hmp.webp",
+    icon: "/img/logo/hmp.webp",
     title: "Heal me please",
     description:
       "Application web permettant d’aider les personnes souffrant de maux à identifier rapidement et simplement les symptômes d’une maladie.",
@@ -111,7 +111,7 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/wimm.png",
+    img: "/img/projects/wimm.webp",
     icon: "/img/logo/wimm.ico",
     title: "Where is my money",
     description:
@@ -121,7 +121,7 @@ const projects = [
     technos: ["React JS", "Typescript", "Laravel", "MySQL", "Gitlab CI/CD"],
   },
   {
-    img: "/img/projects/reactly.png",
+    img: "/img/projects/reactly.webp",
     icon: "/img/logo/reactly.ico",
     title: "Reactly",
     description:
@@ -138,7 +138,7 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/abc.png",
+    img: "/img/projects/abc.webp",
     icon: "/img/logo/react.webp",
     title: "Entreprise ABC",
     description:
@@ -148,7 +148,7 @@ const projects = [
     technos: ["React JS", "Tailwind CSS", ".NET", "MongoDB", "Jenkins"],
   },
   {
-    img: "/img/projects/player.png",
+    img: "/img/projects/player.webp",
     icon: "/img/logo/react.webp",
     title: "Music player",
     description:
@@ -158,7 +158,7 @@ const projects = [
     technos: ["React JS"],
   },
   {
-    img: "/img/projects/calculatrice.png",
+    img: "/img/projects/calculatrice.webp",
     icon: "/img/logo/react.webp",
     title: "Calculatrice",
     description: "Application web d'un calculatrice",
@@ -167,7 +167,7 @@ const projects = [
     technos: ["React JS"],
   },
   {
-    img: "/img/projects/atoute.png",
+    img: "/img/projects/atoute.webp",
     icon: "/img/logo/react.webp",
     title: "Atoute",
     description:
@@ -185,7 +185,7 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/sospr.png",
+    img: "/img/projects/sospr.webp",
     icon: "/img/logo/sospr.ico",
     title: "SOSPR",
     description:
@@ -195,8 +195,8 @@ const projects = [
     technos: ["Laravel", "Tailwind CSS", "Active Directory", "MySQL"],
   },
   {
-    img: "/img/projects/sylab.png",
-    icon: "/img/logo/sylab.png",
+    img: "/img/projects/sylab.webp",
+    icon: "/img/logo/sylab.webp",
     title: "Sylab",
     description:
       "Site web permettant de consulter des offres de biens immobilier.",
