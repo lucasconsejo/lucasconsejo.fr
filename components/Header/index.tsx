@@ -42,6 +42,7 @@ export default function Header() {
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
                   activeClass="text-purple-400 hover:text-white"
                   to="about"
+                  href="/"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -53,6 +54,7 @@ export default function Header() {
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
                   activeClass="text-purple-400 hover:text-white"
                   to="skills"
+                  href="/"
                   spy={true}
                   smooth={true}
                   offset={-80}
@@ -64,6 +66,7 @@ export default function Header() {
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
                   activeClass="text-purple-400 hover:text-white"
                   to="career"
+                  href="/"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -75,6 +78,7 @@ export default function Header() {
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
                   activeClass="text-purple-400 hover:text-white"
                   to="projects"
+                  href="/"
                   spy={true}
                   smooth={true}
                   offset={-20}
@@ -86,6 +90,7 @@ export default function Header() {
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
                   activeClass="text-purple-400 hover:text-white"
                   to="contact"
+                  href="/"
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -143,6 +148,7 @@ export default function Header() {
                     className="text-xl text-gray-200 hover:text-white px-3 font-medium"
                     activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
                     to="about"
+                    href="/"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -155,6 +161,7 @@ export default function Header() {
                     className="text-xl text-gray-200 hover:text-white px-3 font-medium"
                     activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
                     to="skills"
+                    href="/"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -167,6 +174,7 @@ export default function Header() {
                     className="text-xl text-gray-200 hover:text-white px-3 font-medium"
                     activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
                     to="career"
+                    href="/"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -179,6 +187,7 @@ export default function Header() {
                     className="text-xl text-gray-200 hover:text-white px-3 font-medium"
                     activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
                     to="projects"
+                    href="/"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -191,6 +200,7 @@ export default function Header() {
                     className="text-xl text-gray-200 hover:text-white px-3 font-medium"
                     activeClass="text-xl text-purple-400 hover:text-white px-3 font-medium"
                     to="contact"
+                    href="/"
                     spy={true}
                     smooth={true}
                     offset={-70}
