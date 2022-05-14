@@ -10,6 +10,7 @@ export default function Metas({ title, description }: MetasProps) {
     <Head>
       <title>{title}</title>
       <meta name="description" content={description ?? description} />
+      <meta name="robots" content="noimageindex" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="canonical" href="https://lucasconsejo.fr" />
       <meta name="author" content="Lucas Consejo"></meta>
