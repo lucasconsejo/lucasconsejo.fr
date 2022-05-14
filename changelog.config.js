@@ -53,6 +53,11 @@ module.exports = {
       emoji: "⚡️",
       value: "perf",
     },
+    seo: {
+      description: "Add or update SEO",
+      emoji: "🔍️",
+      value: "seo",
+    },
     docs: {
       description: "Documentation only changes.",
       emoji: "📝",
