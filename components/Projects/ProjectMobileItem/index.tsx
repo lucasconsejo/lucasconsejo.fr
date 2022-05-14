@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type ProjectMobileItemProps = {
   project: {
     img: string;
@@ -22,26 +24,19 @@ export default function ProjectMobileItem({ project }: ProjectMobileItemProps) {
       <div className="grid grid-cols-1 justify-center space-y-4 items-center justify-items-center">
         <div className="slide-project rounded-t-lg rounded-b-none">
           <div className="py-10 px-8">
-            <div className="place-self-center">
-              <img src={project.img} alt={project.title} width="100%" height="100%" />
+            <div className="place-self-center relative w-full h-96">
+              <Image src={project.img} layout="fill" className="object-contain" alt={project.title} priority={true} />
             </div>
           </div>
         </div>
         <div className="w-full p-7 mb-40">
           <h2 className="text-xl mb-4" style={{ color: "#ecf0f1" }}>
-            <img
-              className="mr-3 align-middle"
-              style={{
-                width: "32px",
-                height: "32px",
-                display: "inline-block",
-              }}
-              src={project.icon}
-              alt={project.title}
-              width="32px"
-              height="32px"
-            />
-            {project.title}
+            <div className="flex align-middle">
+              <div className="relative w-8 h-8 mr-3">
+                <Image src={project.icon} layout="fill" className="object-contain" alt={project.title} priority={true} />
+              </div>
+              {project.title}
+            </div>
           </h2>
           <h4
             className="text-md leading-relaxed"

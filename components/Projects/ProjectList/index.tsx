@@ -3,6 +3,7 @@ import useInterval from "../../../hooks/useInterval";
 import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectMobileItem from "../ProjectMobileItem";
+import Image from "next/image";
 
 const projects = [
   {
@@ -277,26 +278,19 @@ export default function ProjectList() {
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center space-y-4 md:space-y-0 items-center justify-items-center">
           <div className="slide-project rounded-t-lg rounded-b-none md:rounded-tr-none md:rounded-bl-lg">
             <div className="py-10 px-8">
-              <div className="place-self-center">
-                <img src={projects[projectIndex].img} alt={projects[projectIndex].title} width="100%" height="100%" />
+              <div className="place-self-center relative w-full h-96">
+                <Image src={projects[projectIndex].img} layout="fill" className="object-contain" alt={projects[projectIndex].title} priority={true} />
               </div>
             </div>
           </div>
           <div className="w-full p-7 md:p-12 mb-40">
             <h2 className="text-xl mb-4" style={{ color: "#ecf0f1" }}>
-              <img
-                className="mr-3 align-middle"
-                style={{
-                  width: "32px",
-                  height: "32px",
-                  display: "inline-block",
-                }}
-                src={projects[projectIndex].icon}
-                alt={projects[projectIndex].title}
-                width="32px" 
-                height="32px"
-              />
-              {projects[projectIndex].title}
+              <div className="flex align-middle">
+                <div className="relative w-8 h-8 mr-3">
+                  <Image src={projects[projectIndex].icon} layout="fill" className="object-contain" alt={projects[projectIndex].title} priority={true} />
+                </div>
+                {projects[projectIndex].title}
+              </div>
             </h2>
             <h4
               className="text-md leading-relaxed"
