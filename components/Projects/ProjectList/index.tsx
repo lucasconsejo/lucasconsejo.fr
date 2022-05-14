@@ -292,12 +292,12 @@ export default function ProjectList() {
                 {projects[projectIndex].title}
               </div>
             </h2>
-            <h4
+            <p
               className="text-md leading-relaxed"
               style={{ color: "#ababab", fontWeight: 400 }}
             >
               {projects[projectIndex].description}
-            </h4>
+            </p>
             <div className="flex flex-wrap mt-3">
               {projects[projectIndex].technos.map((item, index) => (
                 <div
