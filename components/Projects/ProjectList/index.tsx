@@ -4,11 +4,12 @@ import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectMobileItem from "../ProjectMobileItem";
 import Image from "next/image";
+import { imageKitLoader } from '../../../utils/index';
 
 const projects = [
   {
-    img: "/img/projects/nostetourtiere.webp",
-    icon: "/img/logo/nostetourtiere.webp",
+    img: "/lucasconsejo/projects/nostetourtiere.webp",
+    icon: "/lucasconsejo/logo/nostetourtiere.webp",
     title: "Noste Tourtière",
     description:
       "Site vitrine d'une pâtisserie artisale basé à Coimères en Gironde.",
@@ -24,8 +25,8 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/dashboard.webp",
-    icon: "/img/logo/dashboard.ico",
+    img: "/lucasconsejo/projects/dashboard.webp",
+    icon: "/lucasconsejo/logo/dashboard.webp",
     title: "Dashboard - Noste Tourtière",
     description:
       "Application back-office pour le site nostetourtiere.com permettant d'éditer les textes et images sur le site.",
@@ -41,8 +42,8 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/reverse-eats.webp",
-    icon: "/img/logo/reverse-eats.webp",
+    img: "/lucasconsejo/projects/reverse-eats.webp",
+    icon: "/lucasconsejo/logo/reverse-eats.webp",
     title: "Reverse Eats",
     description:
       "Application iOS et Android pour commander un cuisinier à domicile afin qu'il prépare les plats choisis depuis votre cuisine.",
@@ -57,8 +58,8 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/conore.webp",
-    icon: "/img/logo/conore.svg",
+    img: "/lucasconsejo/projects/conore.webp",
+    icon: "/lucasconsejo/logo/conore.svg",
     title: "Conore",
     description:
       "Application iOS et Android permettant de réserver des séances dans une salle de cross-fit.",
@@ -75,8 +76,8 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/react-svg-color.webp",
-    icon: "/img/logo/npm.svg",
+    img: "/lucasconsejo/projects/react-svg-color.webp",
+    icon: "/lucasconsejo/logo/npm.svg",
     title: "react-svg-color",
     description:
       "Composant React JS disponible via NPM permettant de modifier les couleurs d'un fichier svg.",
@@ -85,8 +86,8 @@ const projects = [
     technos: ["React JS", "Gitlab CI/CD"],
   },
   {
-    img: "/img/projects/lucasconsejo.webp",
-    icon: "/favicon.ico",
+    img: "/lucasconsejo/projects/lucasconsejo.webp",
+    icon: "/lucasconsejo/logo/favicon.webp",
     title: "lucasconsejo",
     description: "Portfolio que vous êtes en train de consulter.",
     url: "https://lucasconsejo.fr",
@@ -94,8 +95,8 @@ const projects = [
     technos: ["Next JS", "Typescript", "Gitlab CI/CD"],
   },
   {
-    img: "/img/projects/hmp.webp",
-    icon: "/img/logo/hmp.webp",
+    img: "/lucasconsejo/projects/hmp.webp",
+    icon: "/lucasconsejo/logo/hmp.webp",
     title: "Heal me please",
     description:
       "Application web permettant d’aider les personnes souffrant de maux à identifier rapidement et simplement les symptômes d’une maladie.",
@@ -112,8 +113,8 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/wimm.webp",
-    icon: "/img/logo/wimm.ico",
+    img: "/lucasconsejo/projects/wimm.webp",
+    icon: "/lucasconsejo/logo/wimm.webp",
     title: "Where is my money",
     description:
       "Application web permettant de suivre ses dépenses en connectant son compte en banque.",
@@ -122,8 +123,8 @@ const projects = [
     technos: ["React JS", "Typescript", "Laravel", "MySQL", "Gitlab CI/CD"],
   },
   {
-    img: "/img/projects/reactly.webp",
-    icon: "/img/logo/reactly.ico",
+    img: "/lucasconsejo/projects/reactly.webp",
+    icon: "/lucasconsejo/logo/reactly.webp",
     title: "Reactly",
     description:
       "Application web mélangeant des fonctionnalités venant de Facebook, Jira et Microsoft Teams pour réaliser une application tout en un.",
@@ -139,8 +140,8 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/abc.webp",
-    icon: "/img/logo/react.webp",
+    img: "/lucasconsejo/projects/abc.webp",
+    icon: "/lucasconsejo/logo/react.webp",
     title: "Entreprise ABC",
     description:
       "Site e-commerce de vente de meuble reprenant les fonctionnalités de IKEA. Le projet comprend également une application back-office pour éditer des produits parents/enfants.",
@@ -149,8 +150,8 @@ const projects = [
     technos: ["React JS", "Tailwind CSS", ".NET", "MongoDB", "Jenkins"],
   },
   {
-    img: "/img/projects/player.webp",
-    icon: "/img/logo/react.webp",
+    img: "/lucasconsejo/projects/player.webp",
+    icon: "/lucasconsejo/logo/react.webp",
     title: "Music player",
     description:
       "Application web reprenant les fonctionnalités du player Spotify.",
@@ -159,8 +160,8 @@ const projects = [
     technos: ["React JS"],
   },
   {
-    img: "/img/projects/calculatrice.webp",
-    icon: "/img/logo/react.webp",
+    img: "/lucasconsejo/projects/calculatrice.webp",
+    icon: "/lucasconsejo/logo/react.webp",
     title: "Calculatrice",
     description: "Application web d'un calculatrice",
     url: "https://calculator-copperdev.vercel.app/",
@@ -168,8 +169,8 @@ const projects = [
     technos: ["React JS"],
   },
   {
-    img: "/img/projects/atoute.webp",
-    icon: "/img/logo/react.webp",
+    img: "/lucasconsejo/projects/atoute.webp",
+    icon: "/lucasconsejo/logo/react.webp",
     title: "Atoute",
     description:
       "Application web permettant la rencontre entre chercheurs d’emplois et des entreprises.",
@@ -186,8 +187,8 @@ const projects = [
     ],
   },
   {
-    img: "/img/projects/sospr.webp",
-    icon: "/img/logo/sospr.ico",
+    img: "/lucasconsejo/projects/sospr.webp",
+    icon: "/lucasconsejo/logo/sospr.webp",
     title: "SOSPR",
     description:
       "Application web permettant la modification de son mot de passe de façon plus sécurisé avec un système de code généré et envoyer par SMS.",
@@ -196,8 +197,8 @@ const projects = [
     technos: ["Laravel", "Tailwind CSS", "Active Directory", "MySQL"],
   },
   {
-    img: "/img/projects/sylab.webp",
-    icon: "/img/logo/sylab.webp",
+    img: "/lucasconsejo/projects/sylab.webp",
+    icon: "/lucasconsejo/logo/sylab.webp",
     title: "Sylab",
     description:
       "Site web permettant de consulter des offres de biens immobilier.",
@@ -279,7 +280,15 @@ export default function ProjectList() {
           <div className="slide-project rounded-t-lg rounded-b-none md:rounded-tr-none md:rounded-bl-lg">
             <div className="py-10 px-8">
               <div className="place-self-center relative w-full h-96">
-                <Image src={projects[projectIndex].img} layout="fill" className="object-contain" alt={projects[projectIndex].title} sizes="20vw" />
+                <Image 
+                  loader={imageKitLoader} 
+                  src={projects[projectIndex].img} 
+                  layout="fill" 
+                  className="object-contain" 
+                  alt={projects[projectIndex].title} 
+                  sizes="20vw" 
+                  quality={75}
+                />
               </div>
             </div>
           </div>
@@ -287,7 +296,15 @@ export default function ProjectList() {
             <h2 className="text-xl mb-4" style={{ color: "#ecf0f1" }}>
               <div className="flex align-middle">
                 <div className="relative w-8 h-8 mr-3">
-                  <Image src={projects[projectIndex].icon} layout="fill" className="object-contain" alt={projects[projectIndex].title} sizes="20vw" />
+                  <Image 
+                    loader={imageKitLoader} 
+                    src={projects[projectIndex].icon} 
+                    layout="fill" 
+                    className="object-contain" 
+                    alt={projects[projectIndex].title} 
+                    sizes="20vw"
+                    quality={50}
+                  />
                 </div>
                 {projects[projectIndex].title}
               </div>

@@ -9,7 +9,7 @@ export default function Skills() {
       <div className="flex flex-wrap items-center justify-center md:justify-between w-full max-w-4xl mx-auto pt-4 sm:mt-10">
         <Icon
           id="reactjs"
-          src="/img/logo/react.webp"
+          src="/lucasconsejo/logo/react.webp"
           url="https://fr.reactjs.org/"
         >
           React JS et React Native
@@ -17,7 +17,7 @@ export default function Skills() {
 
         <Icon
           id="csharp"
-          src="/img/logo/csharp.webp"
+          src="/lucasconsejo/logo/csharp.webp"
           url="https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/"
         >
           C#
@@ -25,7 +25,7 @@ export default function Skills() {
 
         <Icon
           id="js"
-          src="/img/logo/javascript.webp"
+          src="/lucasconsejo/logo/javascript.webp"
           url="https://developer.mozilla.org/fr/docs/Web/JavaScript"
           className="lg:w-11 lg:h-11"
         >
@@ -34,7 +34,7 @@ export default function Skills() {
 
         <Icon
           id="ts"
-          src="/img/logo/typescript.svg"
+          src="/lucasconsejo/logo/typescript.svg"
           url="https://www.typescriptlang.org/"
           className="lg:w-11 lg:h-11"
         >
@@ -43,20 +43,20 @@ export default function Skills() {
 
         <Icon
           id="nodejs"
-          src="/img/logo/nodejs.webp"
+          src="/lucasconsejo/logo/nodejs.webp"
           url="https://nodejs.org/fr/"
           className="lg:w-14 lg:h-14"
         >
           Node JS
         </Icon>
 
-        <Icon id="nextjs" src="/img/logo/nextjs.webp" url="https://nextjs.org/">
+        <Icon id="nextjs" src="/lucasconsejo/logo/nextjs.webp" url="https://nextjs.org/">
           Next JS
         </Icon>
 
         <Icon
           id="tailwind"
-          src="/img/logo/tailwind.webp"
+          src="/lucasconsejo/logo/tailwind.webp"
           url="https://tailwindcss.com/"
         >
           Tailwind CSS
@@ -64,7 +64,7 @@ export default function Skills() {
 
         <Icon
           id="styled-components"
-          src="/img/logo/styled-components.webp"
+          src="/lucasconsejo/logo/styled-components.webp"
           url="https://styled-components.com/"
           className="w-20 h-20 lg:w-20 lg:h-20"
         >
@@ -84,7 +84,7 @@ export default function Skills() {
         <Icon
           id="kubernetes"
           grayscale
-          src="/img/logo/kubernetes.webp"
+          src="/lucasconsejo/logo/kubernetes.webp"
           url="https://kubernetes.io/fr/"
           className="lg:w-9 lg:h-9"
         >
@@ -93,7 +93,7 @@ export default function Skills() {
         <Icon
           id="docker"
           grayscale
-          src="/img/logo/docker.webp"
+          src="/lucasconsejo/logo/docker.webp"
           url="https://www.docker.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -102,7 +102,7 @@ export default function Skills() {
         <Icon
           id="docker-compose"
           grayscale
-          src="/img/logo/docker-compose.webp"
+          src="/lucasconsejo/logo/docker-compose.webp"
           url="https://docs.docker.com/compose/"
           className="lg:w-9 lg:h-9"
         >
@@ -111,7 +111,7 @@ export default function Skills() {
         <Icon
           id="grafana"
           grayscale
-          src="/img/logo/grafana.webp"
+          src="/lucasconsejo/logo/grafana.webp"
           url="https://grafana.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -120,7 +120,7 @@ export default function Skills() {
         <Icon
           id="kibana"
           grayscale
-          src="/img/logo/kibana.webp"
+          src="/lucasconsejo/logo/kibana.webp"
           url="https://www.elastic.co/fr/kibana/"
           className="lg:w-9 lg:h-9"
         >
@@ -129,7 +129,7 @@ export default function Skills() {
         <Icon
           id="jenkins"
           grayscale
-          src="/img/logo/jenkins.webp"
+          src="/lucasconsejo/logo/jenkins.webp"
           url="https://www.jenkins.io/"
           className="lg:w-9 lg:h-9"
         >
@@ -138,7 +138,7 @@ export default function Skills() {
         <Icon
           id="gitlab-cicd"
           grayscale
-          src="/img/logo/gitlab.webp"
+          src="/lucasconsejo/logo/gitlab.webp"
           url="https://docs.gitlab.com/ee/ci/"
           className="lg:w-9 lg:h-9"
         >
@@ -147,7 +147,7 @@ export default function Skills() {
         <Icon
           id="git"
           grayscale
-          src="/img/logo/git.webp"
+          src="/lucasconsejo/logo/git.webp"
           url="https://git-scm.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -156,7 +156,7 @@ export default function Skills() {
         <Icon
           id="sonar"
           grayscale
-          src="/img/logo/sonar.webp"
+          src="/lucasconsejo/logo/sonar.webp"
           url="https://www.sonarqube.org/"
           className="lg:w-9 lg:h-9"
         >
@@ -165,7 +165,7 @@ export default function Skills() {
         <Icon
           id="jest"
           grayscale
-          src="/img/logo/jest.webp"
+          src="/lucasconsejo/logo/jest.webp"
           url="https://jestjs.io/fr/"
           className="lg:w-8 lg:h-8"
         >
@@ -174,7 +174,7 @@ export default function Skills() {
         <Icon
           id="ansible"
           grayscale
-          src="/img/logo/ansible.webp"
+          src="/lucasconsejo/logo/ansible.webp"
           url="https://docs.ansible.com/ansible/latest/index.html"
           className="lg:w-9 lg:h-9"
         >
@@ -183,7 +183,7 @@ export default function Skills() {
         <Icon
           id="vagrant"
           grayscale
-          src="/img/logo/vagrant.webp"
+          src="/lucasconsejo/logo/vagrant.webp"
           url="https://www.vagrantup.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -192,7 +192,7 @@ export default function Skills() {
         <Icon
           id="azure"
           grayscale
-          src="/img/logo/azure.webp"
+          src="/lucasconsejo/logo/azure.webp"
           url="https://azure.microsoft.com/fr-fr/"
           className="lg:w-9 lg:h-9"
         >
@@ -201,7 +201,7 @@ export default function Skills() {
         <Icon
           id="dotnet"
           grayscale
-          src="/img/logo/dotnet.webp"
+          src="/lucasconsejo/logo/dotnet.webp"
           url="https://dotnet.microsoft.com/en-us/"
           className="lg:w-9 lg:h-9"
         >
@@ -210,7 +210,7 @@ export default function Skills() {
         <Icon
           id="laravel"
           grayscale
-          src="/img/logo/laravel.webp"
+          src="/lucasconsejo/logo/laravel.webp"
           url="https://laravel.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -219,7 +219,7 @@ export default function Skills() {
         <Icon
           id="symfony"
           grayscale
-          src="/img/logo/symfony.webp"
+          src="/lucasconsejo/logo/symfony.webp"
           url="https://symfony.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -228,7 +228,7 @@ export default function Skills() {
         <Icon
           id="mongo"
           grayscale
-          src="/img/logo/mongo.webp"
+          src="/lucasconsejo/logo/mongo.webp"
           url="https://www.mongodb.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -237,7 +237,7 @@ export default function Skills() {
         <Icon
           id="firebase"
           grayscale
-          src="/img/logo/firebase.webp"
+          src="/lucasconsejo/logo/firebase.webp"
           url="https://firebase.google.com/"
           className="lg:w-9 lg:h-9"
         >
@@ -246,7 +246,7 @@ export default function Skills() {
         <Icon
           id="couchbase"
           grayscale
-          src="/img/logo/couchbase.webp"
+          src="/lucasconsejo/logo/couchbase.webp"
           url="https://www.couchbase.com/fr"
           className="lg:w-9 lg:h-9"
         >
@@ -255,7 +255,7 @@ export default function Skills() {
         <Icon
           id="sqlserver"
           grayscale
-          src="/img/logo/sqlserver.webp"
+          src="/lucasconsejo/logo/sqlserver.webp"
           url="https://www.microsoft.com/fr-fr/sql-server/"
           className="lg:w-9 lg:h-9"
         >
@@ -264,7 +264,7 @@ export default function Skills() {
         <Icon
           id="postgresql"
           grayscale
-          src="/img/logo/postgresql.webp"
+          src="/lucasconsejo/logo/postgresql.webp"
           url="https://www.postgresql.org/"
           className="lg:w-9 lg:h-9"
         >
@@ -273,7 +273,7 @@ export default function Skills() {
         <Icon
           id="mysql"
           grayscale
-          src="/img/logo/mysql.webp"
+          src="/lucasconsejo/logo/mysql.webp"
           url="https://www.mysql.com/fr/"
           className="lg:w-9 lg:h-9"
         >
@@ -282,7 +282,7 @@ export default function Skills() {
         <Icon
           id="kafka"
           grayscale
-          src="/img/logo/kafka.webp"
+          src="/lucasconsejo/logo/kafka.webp"
           url="https://kafka.apache.org/"
           className="lg:w-9 lg:h-9"
         >
@@ -291,7 +291,7 @@ export default function Skills() {
         <Icon
           id="solr"
           grayscale
-          src="/img/logo/solr.webp"
+          src="/lucasconsejo/logo/solr.webp"
           url="https://solr.apache.org/"
           className="lg:w-9 lg:h-9"
         >
@@ -300,7 +300,7 @@ export default function Skills() {
         <Icon
           id="figma"
           grayscale
-          src="/img/logo/figma.webp"
+          src="/lucasconsejo/logo/figma.webp"
           url="https://www.figma.com/"
           className="lg:w-12 lg:h-12"
         >
@@ -309,7 +309,7 @@ export default function Skills() {
         <Icon
           id="jira"
           grayscale
-          src="/img/logo/jira.webp"
+          src="/lucasconsejo/logo/jira.webp"
           url="https://www.atlassian.com/fr/software/jira"
           className="lg:w-9 lg:h-9"
         >
@@ -318,7 +318,7 @@ export default function Skills() {
         <Icon
           id="raspberry"
           grayscale
-          src="/img/logo/raspberry.webp"
+          src="/lucasconsejo/logo/raspberry.webp"
           url="https://www.raspberrypi.com/"
           className="lg:w-10 lg:h-10"
         >
@@ -327,7 +327,7 @@ export default function Skills() {
         <Icon
           id="arduino"
           grayscale
-          src="/img/logo/arduino.webp"
+          src="/lucasconsejo/logo/arduino.webp"
           url="https://www.arduino.cc/"
           className="lg:w-10 lg:h-10"
         >
@@ -356,7 +356,7 @@ export default function Skills() {
         <Icon
           id="macos"
           grayscale
-          src="/img/logo/apple.svg"
+          src="/lucasconsejo/logo/apple.svg"
           url="https://www.apple.com/fr/macos/monterey/"
           className="lg:w-9 lg:h-9"
         >
@@ -365,7 +365,7 @@ export default function Skills() {
         <Icon
           id="windows"
           grayscale
-          src="/img/logo/windows.webp"
+          src="/lucasconsejo/logo/windows.webp"
           url="https://www.microsoft.com/fr-fr/software-download/windows10ISO?navItemId=daef1c13-0b0d-425e-905b-df14c9806f33"
           className="lg:w-9 lg:h-9"
         >
@@ -374,7 +374,7 @@ export default function Skills() {
         <Icon
           id="linux"
           grayscale
-          src="/img/logo/linux.webp"
+          src="/lucasconsejo/logo/linux.webp"
           url="https://www.linux.org/"
           className="lg:w-10 lg:h-10"
         >

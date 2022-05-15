@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { imageKitLoader } from '../../utils/index';
 
 type IconProps = {
   id: string;
@@ -29,7 +30,16 @@ export default function Icon({
           className ? className : "lg:w-16 lg:h-16"
         } ${grayscale ? "grayscale hover:grayscale-0" : "grayscale-0"}`}
       >
-        <Image src={src} layout="fill" objectFit="contain" alt="techno icon" sizes="20vw" priority={true} />
+        <Image 
+          loader={imageKitLoader}
+          src={src} 
+          layout="fill" 
+          objectFit="contain" 
+          alt="techno icon" 
+          sizes="20vw" 
+          quality={75}
+          priority={true} 
+        />
       </a>
       <div
         id={id}
