@@ -1,4 +1,5 @@
 import Head from "next/head";
+import useSystemTheme from "react-use-system-theme";
 
 type MetasProps = {
   title: string;
@@ -6,12 +7,32 @@ type MetasProps = {
 };
 
 export default function Metas({ title, description }: MetasProps) {
+  const systemTheme = useSystemTheme();
   return (
     <Head>
       <title>{title}</title>
       <meta name="description" content={description ?? description} />
       <meta name="robots" content="noimageindex" />
-      <link rel="icon" href="/favicon.ico" />
+      {systemTheme !== "dark" && (
+        <>
+          <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+          <link rel="manifest" href="/manifest/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#160a3e" />
+          <link rel="shortcut icon" href="/favicons/favicon.ico" />
+        </>
+      )}
+      {systemTheme === "dark" && (
+        <>
+          <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-dark-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-dark-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-dark-16x16.png" />
+          <link rel="manifest" href="/manifest/site-dark.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab-dark.svg" color="#160a3e" />
+          <link rel="shortcut icon" href="/favicons/favicon-dark.ico" />
+      </>
+      )}
       <link rel="canonical" href="https://lucasconsejo.fr" />
       <meta name="author" content="Lucas Consejo"></meta>
       <meta name="theme-color" content="rgb(16, 5, 36)"></meta>
@@ -31,7 +52,6 @@ export default function Metas({ title, description }: MetasProps) {
       <meta name="twitter:title" content={title}/>
       <meta name="twitter:description" content={description ?? description} />
       <meta name="twitter:image" content="https://www.lucasconsejo.fr/img/og/lucasconsejo.png" />
-
     </Head>
   );
 }
