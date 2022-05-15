@@ -5,7 +5,7 @@ export default function Contact() {
         <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
           <span className="block text-white">Contact</span>
           <span className="block text-purple-400 text-2xl md:text-4xl">
-            Une envie de me contacter ?
+            Envie de me contacter ?
           </span>
         </h2>
         <div className="mt-8 flex justify-center">
