@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { imageKitLoader } from "utils";
+
 const navigation = [
   {
     name: "GitHub",
@@ -53,43 +56,79 @@ const navigation = [
 
 export default function Introduction() {
   return (
-    <div
-      id="intro"
-      className="flex flex-col justify-start items-center sm:flex-row sm:justify-around w-full pt-36 sm:pt-0"
-    >
-      <div className="space-y-4 order-last sm:order-first mt-5 sm:mt-0">
-        <div className="text-white space-y-2">
-          <h1 className="font-bold text-3xl sm:text-5xl text-center sm:text-left">
-            Lucas Consejo
-          </h1>
-          <div className="flex flex-col items-center sm:flex-row font-medium text-xl sm:text-2xl space-x-1 whitespace-nowrap">
-            <h2 className="text-left">Ingénieur d&#39;étude - Développeur</h2>
-            <a
-              href="https://www.cdiscount.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="block typewriter text-orange-cds hover:underline"
-            >
-              @cdiscount.
-            </a>
-          </div>
-          <div className="flex justify-center space-x-6 md:order-2 md:justify-start">
-            {navigation.map((item) => (
+    <div>
+      <div
+        id="intro"
+        className="flex flex-col justify-start items-center sm:flex-row sm:justify-start pt-36 sm:pt-0"
+      >
+        <div className="space-y-4 order-last sm:order-first mt-16 sm:mt-0 sm:ml-36 2xl:ml-72">
+          <div className="text-white space-y-2">
+            <h1 className="font-bold text-3xl sm:text-5xl text-center sm:text-left">
+              Lucas Consejo
+            </h1>
+            <div className="flex flex-col items-center sm:flex-row font-medium text-lg sm:text-2xl space-x-1 whitespace-nowrap">
+              <h2 className="text-left">Ingénieur d&#39;étude - Développeur</h2>
               <a
-                key={item.name}
-                href={item.href}
+                href="https://www.cdiscount.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-400 hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200 mt-3"
+                className="block typewriter text-orange-cds hover:underline"
               >
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-7 w-7" aria-hidden="true" />
+                @cdiscount.
               </a>
-            ))}
+            </div>
+            <div className="flex justify-center space-x-6 md:order-2 md:justify-start">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-gray-400 hover:text-white transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-200 mt-3"
+                >
+                  <span className="sr-only">{item.name}</span>
+                  <item.icon className="h-7 w-7" aria-hidden="true" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
+        <div className="hidden sm:block sm:absolute sm:w-5/12 sm:h-4/5 sm:top-20 sm:-right-32 2xl:w-6/12 2xl:h-3/5 2xl:top-48">
+          <Image 
+            loader={imageKitLoader} 
+            src="/lucasconsejo/characters/character.webp"
+            layout="fill" 
+            className="object-contain" 
+            alt="human"
+            sizes="20vw" 
+            quality={100}
+            priority
+          />
+        </div>
+        <div className="block relative sm:hidden w-5/12 h-72">
+          <Image 
+            loader={imageKitLoader} 
+            src="/lucasconsejo/characters/character-mobile.webp"
+            layout="fill" 
+            className="object-contain" 
+            alt="human" 
+            sizes="20vw" 
+            quality={100}
+            priority
+          />
+        </div>
       </div>
-      <div className="relative w-36 h-36 sm:w-64 sm:h-64"></div>
+      <div className="hidden md:flex justify-center items-center space-x-2 text-gray-400">
+        <svg className="w-7 h-7" viewBox="0 0 24 24">
+          <g fill="currentColor">
+            <path d="M12 5a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V6a1 1 0 0 0-1-1Z" />
+            <path 
+              fillRule="evenodd"
+              d="M4 8a8 8 0 1 1 16 0v8a8 8 0 1 1-16 0V8Zm14 0v8a6 6 0 0 1-12 0V8a6 6 0 1 1 12 0Z" clipRule="evenodd" />
+          </g>
+        </svg>
+        <p>Défiler vers le bas </p>
+      </div>
     </div>
   );
 }
