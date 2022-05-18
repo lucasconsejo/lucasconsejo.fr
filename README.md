@@ -43,11 +43,11 @@
 
 ### Prérequis
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Ce projet utilise des packages NPM. Il est donc requis d'avoir installer NPM. 
+
+Facultatif : Installer yarn
+
+> Par habitude, je préfère utiliser `yarn` plutôt que `npm`.
 
 ### Installation
 
