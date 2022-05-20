@@ -327,15 +327,11 @@ export default function ProjectList() {
           className="text-gray-500 mx-2 hover:text-purple-500 cursor-pointer"
           onClick={previousProject}
         >
-          <svg
-            className="w-8 h-8 md:w-7 md:h-7"
-            transform="scale(-1 1)"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="currentColor"
-              d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"
-            ></path>
+          <svg className="w-8 h-8 md:w-7 md:h-7" viewBox="0 0 24 24">
+            <path 
+              fill="currentColor" 
+              d="M17.77 3.77L16 2L6 12l10 10l1.77-1.77L9.54 12z"
+            />
           </svg>
         </div>
         <div className="items-center justify-center space-x-3 md:flex">
