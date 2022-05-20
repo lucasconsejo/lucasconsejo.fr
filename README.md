@@ -71,9 +71,9 @@ Facultatif : Installer yarn
 ## Roadmap
 
 - [ ] Ajout animation avec la souris
-- [ ] Multi-langue :
-    - [ ] Français
-    - [ ] English
+- [x] Multi-langue :
+    - [x] Français
+    - [x] English
 - [ ] Ajout de tests unitaires
 
 Lucas Consejo ⚡
