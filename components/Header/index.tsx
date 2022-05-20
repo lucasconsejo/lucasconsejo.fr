@@ -4,6 +4,7 @@ import useScroll from "hooks/useScroll";
 import { Link, animateScroll } from "react-scroll";
 import { i18nHeader } from "i18n";
 import { I18nContext } from "contexts/i18nContext";
+import SelectLang, { EnglishIcon, FrenchIcon } from "components/SelectLang";
 
 export default function Header() {
   const { localeState } = useContext(I18nContext);
@@ -41,7 +42,7 @@ export default function Header() {
               LC
             </h1>
             <div className="hidden md:block w-full">
-              <div className="flex justify-end space-x-8">
+              <div className="flex justify-end items-center space-x-8">
                 <Link
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
                   activeClass="text-purple-400 hover:text-white"
@@ -102,12 +103,16 @@ export default function Header() {
                 >
                   {titles[4]}
                 </Link>
+                <SelectLang />
               </div>
             </div>
           </div>
 
           {/* Icon menu mobile */}
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 flex md:hidden items-center space-x-3">
+            <a href={localeState === "en" ? "/fr" : "/en"}>
+              {localeState === "en" ? <EnglishIcon /> : <FrenchIcon />}
+            </a>
             <button
               className="text-gray-200 hover:text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
               onClick={() => setNavbarOpen(!navbarOpen)}
