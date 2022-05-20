@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React from "react";
 import useSystemTheme from "react-use-system-theme";
 
 type MetasProps = {
@@ -6,7 +7,7 @@ type MetasProps = {
   description?: string;
 };
 
-export default function Metas({ title, description }: MetasProps) {
+function Metas({ title, description }: MetasProps) {
   const systemTheme = useSystemTheme();
   return (
     <Head>
@@ -55,3 +56,5 @@ export default function Metas({ title, description }: MetasProps) {
     </Head>
   );
 }
+
+export default React.memo(Metas);

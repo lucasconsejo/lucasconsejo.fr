@@ -1,7 +1,7 @@
 import { I18nContext } from "contexts/i18nContext";
 import dayjs from "dayjs";
 import { i18nFooter } from "i18n";
-import { useContext } from "react";
+import React, { useContext } from "react";
 
 const navigation = [
   {
@@ -56,7 +56,7 @@ const navigation = [
   },
 ];
 
-export default function Footer() {
+function Footer() {
   const { localeState } = useContext(I18nContext);
   const { copyright } = i18nFooter[localeState];
   const year = dayjs().format("YYYY");
@@ -86,3 +86,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default React.memo(Footer);
