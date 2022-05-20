@@ -9,7 +9,7 @@ export default function SelectLang() {
     <div className="text-right">
       <Menu as="div" className="relative text-left">
         <div>
-          <Menu.Button className="flex w-full justify-center items-center rounded-md text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+          <Menu.Button aria-label="lang" className="flex w-full justify-center items-center rounded-md text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             {localeState === "en" ? <EnglishIcon /> : <FrenchIcon />}
             <ChevronDownIcon
               className="-mr-1 h-5 w-5 text-violet-200 hover:text-violet-100 hidden md:block"
