@@ -6,7 +6,7 @@ import { i18nHeader } from "i18n";
 import { I18nContext } from "contexts/i18nContext";
 
 export default function Header() {
-  const { localeState, localeDispatch } = useContext(I18nContext);
+  const { localeState } = useContext(I18nContext);
   const { titles } = i18nHeader[localeState];
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [scroll] = useScroll();
