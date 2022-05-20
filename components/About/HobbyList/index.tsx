@@ -1,12 +1,16 @@
+import { I18nContext } from "contexts/i18nContext";
+import { i18nAbout } from "i18n";
+import { useContext } from "react";
 import Hobby from "../Hobby";
 
 export default function HobbyList() {
+  const { localeState } = useContext(I18nContext);
+  const { content } = i18nAbout[localeState];
   return (
     <div className="sm:flex flex-wrap max-w-screen-2xl mx-auto justify-center items-center text-center gap-8 pb-16 pt-5">
-      <Hobby title="Cinéma" icon="movie" theme="dark">
+      <Hobby title={content[0].title} icon="movie" theme="dark">
         <p className="text-md text-gray-200 py-4">
-          Depuis la réouverture des cinémas après le confinement, je vais 2 à 3
-          fois au ciné par mois. Vous avez vu le dernier{" "}
+          {content[0].start}{" "}
           <a
             href="https://www.youtube.com/watch?v=hWRSJlp50rQ"
             target="_blank"
@@ -15,31 +19,28 @@ export default function HobbyList() {
           >
             The Batman
           </a>{" "}
-          ? Wow, il était incroyable ! 🤩
+          {content[0].end}
         </p>
       </Hobby>
 
-      <Hobby title="Informatique" icon="info" theme="light" alignCenter>
+      <Hobby title={content[1].title} icon="info" theme="light" alignCenter>
         <p className="text-md text--gray-800 py-4">
-          Passionné depuis le collège, je me suis vite autoformé puis inscrit
-          pour un master expert informatique pour enfin en faire mon{" "}
+          {content[1].start}{" "}
           <a
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             target="_blank"
             rel="noreferrer"
             className="underline font-bold text-black hover:text-purple-400"
           >
-            métier
+            {content[1].end}
           </a>
           . 🤭
         </p>
       </Hobby>
 
-      <Hobby title="Jeux vidéos" icon="video-games" theme="purple">
+      <Hobby title={content[2].title} icon="video-games" theme="purple">
         <p className="text-md  text-gray-800 py-4">
-          Je suis bon public, que ce soit en solo ou en multi, jeux indés ou
-          triple A, je peux y passer pas mal d&#39;heures dessus. Préférence
-          pour les{" "}
+          {content[2].start}{" "}
           <a
             href="https://www.youtube.com/watch?v=jPlWnCE4Edo"
             target="_blank"

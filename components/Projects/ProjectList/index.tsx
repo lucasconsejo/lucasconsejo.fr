@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import useInterval from "../../../hooks/useInterval";
 import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectMobileItem from "../ProjectMobileItem";
 import Image from "next/image";
 import { imageKitLoader } from '../../../utils/index';
+import { I18nContext } from "contexts/i18nContext";
+import { i18nProjects } from "i18n";
 
 const projects = [
   {
     img: "/lucasconsejo/projects/nostetourtiere.webp",
     icon: "/lucasconsejo/logo/nostetourtiere.webp",
     title: "Noste Tourtière",
-    description:
-      "Site vitrine d'une pâtisserie artisale basé à Coimères en Gironde.",
     url: "https://www.nostetourtiere.com",
     isStudentProject: false,
     technos: [
@@ -28,8 +28,6 @@ const projects = [
     img: "/lucasconsejo/projects/dashboard.webp",
     icon: "/lucasconsejo/logo/dashboard.webp",
     title: "Dashboard - Noste Tourtière",
-    description:
-      "Application back-office pour le site nostetourtiere.com permettant d'éditer les textes et images sur le site.",
     url: "",
     isStudentProject: true,
     technos: [
@@ -45,8 +43,6 @@ const projects = [
     img: "/lucasconsejo/projects/reverse-eats.webp",
     icon: "/lucasconsejo/logo/reverse-eats.webp",
     title: "Reverse Eats",
-    description:
-      "Application iOS et Android pour commander un cuisinier à domicile afin qu'il prépare les plats choisis depuis votre cuisine.",
     url: "",
     isStudentProject: true,
     technos: [
@@ -61,8 +57,6 @@ const projects = [
     img: "/lucasconsejo/projects/conore.webp",
     icon: "/lucasconsejo/logo/conore.svg",
     title: "Conore",
-    description:
-      "Application iOS et Android permettant de réserver des séances dans une salle de cross-fit.",
     url: "",
     isStudentProject: true,
     technos: [
@@ -79,8 +73,6 @@ const projects = [
     img: "/lucasconsejo/projects/react-svg-color.webp",
     icon: "/lucasconsejo/logo/npm.svg",
     title: "react-svg-color",
-    description:
-      "Composant React JS disponible via NPM permettant de modifier les couleurs d'un fichier svg.",
     url: "https://www.npmjs.com/package/react-svg-color",
     isStudentProject: false,
     technos: ["React JS", "Gitlab CI/CD"],
@@ -89,7 +81,6 @@ const projects = [
     img: "/lucasconsejo/projects/lucasconsejo.webp",
     icon: "/lucasconsejo/logo/favicon.webp",
     title: "lucasconsejo",
-    description: "Portfolio que vous êtes en train de consulter.",
     url: "https://lucasconsejo.fr",
     isStudentProject: false,
     technos: ["Next JS", "Typescript", "Gitlab CI/CD"],
@@ -98,8 +89,6 @@ const projects = [
     img: "/lucasconsejo/projects/hmp.webp",
     icon: "/lucasconsejo/logo/hmp.webp",
     title: "Heal me please",
-    description:
-      "Application web permettant d’aider les personnes souffrant de maux à identifier rapidement et simplement les symptômes d’une maladie.",
     url: "",
     isStudentProject: true,
     technos: [
@@ -116,8 +105,6 @@ const projects = [
     img: "/lucasconsejo/projects/wimm.webp",
     icon: "/lucasconsejo/logo/wimm.webp",
     title: "Where is my money",
-    description:
-      "Application web permettant de suivre ses dépenses en connectant son compte en banque.",
     url: "",
     isStudentProject: true,
     technos: ["React JS", "Typescript", "Laravel", "MySQL", "Gitlab CI/CD"],
@@ -126,8 +113,6 @@ const projects = [
     img: "/lucasconsejo/projects/reactly.webp",
     icon: "/lucasconsejo/logo/reactly.webp",
     title: "Reactly",
-    description:
-      "Application web mélangeant des fonctionnalités venant de Facebook, Jira et Microsoft Teams pour réaliser une application tout en un.",
     url: "",
     isStudentProject: true,
     technos: [
@@ -143,8 +128,6 @@ const projects = [
     img: "/lucasconsejo/projects/abc.webp",
     icon: "/lucasconsejo/logo/react.webp",
     title: "Entreprise ABC",
-    description:
-      "Site e-commerce de vente de meuble reprenant les fonctionnalités de IKEA. Le projet comprend également une application back-office pour éditer des produits parents/enfants.",
     url: "",
     isStudentProject: true,
     technos: ["React JS", "Tailwind CSS", ".NET", "MongoDB", "Jenkins"],
@@ -153,8 +136,6 @@ const projects = [
     img: "/lucasconsejo/projects/player.webp",
     icon: "/lucasconsejo/logo/react.webp",
     title: "Music player",
-    description:
-      "Application web reprenant les fonctionnalités du player Spotify.",
     url: "https://music-player-copperdev.vercel.app/",
     isStudentProject: false,
     technos: ["React JS"],
@@ -163,7 +144,6 @@ const projects = [
     img: "/lucasconsejo/projects/calculatrice.webp",
     icon: "/lucasconsejo/logo/react.webp",
     title: "Calculatrice",
-    description: "Application web d'un calculatrice",
     url: "https://calculator-copperdev.vercel.app/",
     isStudentProject: false,
     technos: ["React JS"],
@@ -172,8 +152,6 @@ const projects = [
     img: "/lucasconsejo/projects/atoute.webp",
     icon: "/lucasconsejo/logo/react.webp",
     title: "Atoute",
-    description:
-      "Application web permettant la rencontre entre chercheurs d’emplois et des entreprises.",
     url: "",
     isStudentProject: true,
     technos: [
@@ -190,8 +168,6 @@ const projects = [
     img: "/lucasconsejo/projects/sospr.webp",
     icon: "/lucasconsejo/logo/sospr.webp",
     title: "SOSPR",
-    description:
-      "Application web permettant la modification de son mot de passe de façon plus sécurisé avec un système de code généré et envoyer par SMS.",
     url: "",
     isStudentProject: true,
     technos: ["Laravel", "Tailwind CSS", "Active Directory", "MySQL"],
@@ -200,8 +176,6 @@ const projects = [
     img: "/lucasconsejo/projects/sylab.webp",
     icon: "/lucasconsejo/logo/sylab.webp",
     title: "Sylab",
-    description:
-      "Site web permettant de consulter des offres de biens immobilier.",
     url: "",
     isStudentProject: true,
     technos: ["Symfony", "Bootstrap", "MySQL"],
@@ -209,6 +183,8 @@ const projects = [
 ];
 
 export default function ProjectList() {
+  const { localeState } = useContext(I18nContext);
+  const { urlAccess, content } = i18nProjects[localeState];
   const [projectIndex, setProjectIndex] = useState(0);
   const stopInterval = useInterval(() => {
     setProjectIndex((prev) => {
@@ -252,16 +228,19 @@ export default function ProjectList() {
           pagination={{ clickable: true }}
           className="swiper-projects z-0"
         >
-          {projects.map((project, index) => (
-            <SwiperSlide key={index}>
-              {({ isActive }) => (
-                <div className="text-white">
-                  Current slide is {isActive ? "active" : "not active"}
-                </div>
-              )}
-              <ProjectMobileItem project={project} />
-            </SwiperSlide>
-          ))}
+          {projects.map((project, index) => {
+            const projectItem = { ...project, description: content[index].description }
+            return (
+              <SwiperSlide key={index}>
+                {({ isActive }) => (
+                  <div className="text-white">
+                    Current slide is {isActive ? "active" : "not active"}
+                  </div>
+                )}
+                <ProjectMobileItem project={projectItem} />
+              </SwiperSlide>
+            )
+          })}
         </Swiper>
       </div>
     );
@@ -313,7 +292,7 @@ export default function ProjectList() {
               className="text-md leading-relaxed"
               style={{ color: "#ababab", fontWeight: 400 }}
             >
-              {projects[projectIndex].description}
+              {content[projectIndex].description}
             </p>
             <div className="flex flex-wrap mt-3">
               {projects[projectIndex].technos.map((item, index) => (
@@ -333,7 +312,7 @@ export default function ProjectList() {
                   rel="noreferrer"
                   className="bg-blue-600 text-white rounded-sm px-3 py-2 shadow-md"
                 >
-                  Accéder au site
+                  {urlAccess}
                 </a>
               )}
             </div>

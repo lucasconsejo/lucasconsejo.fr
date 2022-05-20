@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ReactElement, useContext } from "react";
 import {
   Metas,
   Layout,
@@ -9,15 +9,22 @@ import {
   Projects,
   Contact,
 } from "components";
+import { useRouter } from "next/router";
+import { i18nMetas } from "i18n";
+import { I18nContext } from '../contexts/i18nContext';
+import { lang } from "utils";
 
 export default function Home() {
+  const { locale } = useRouter();
+  const { localeState, localeDispatch } = useContext(I18nContext);
+  localeDispatch({ 
+      type: "UPDATE_LANG",
+      payload: lang(locale)
+  });
+  const { title, description } = i18nMetas[localeState];
   return (
     <div>
-      <Metas 
-        title="Lucas Consejo | Ingénieur d'étude - Développeur Cdiscount"
-        description="Site porfolio de Lucas Consejo, développeur web & mobile."
-      />
-
+      <Metas title={title} description={description} />
       <Introduction />
       <About />
       <Skills />

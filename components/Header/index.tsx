@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
 import useScroll from "hooks/useScroll";
 import { Link, animateScroll } from "react-scroll";
+import { i18nHeader } from "i18n";
+import { I18nContext } from "contexts/i18nContext";
 
 export default function Header() {
+  const { localeState, localeDispatch } = useContext(I18nContext);
+  const { titles } = i18nHeader[localeState];
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [scroll] = useScroll();
   const [show, setShow] = useState(false);
@@ -48,7 +52,7 @@ export default function Header() {
                   offset={-70}
                   duration={500}
                 >
-                  À propos
+                  {titles[0]}
                 </Link>
                 <Link
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
@@ -60,7 +64,7 @@ export default function Header() {
                   offset={-80}
                   duration={500}
                 >
-                  Compétences
+                  {titles[1]}
                 </Link>
                 <Link
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
@@ -72,7 +76,7 @@ export default function Header() {
                   offset={-70}
                   duration={500}
                 >
-                  Carrière
+                  {titles[2]}
                 </Link>
                 <Link
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
@@ -84,7 +88,7 @@ export default function Header() {
                   offset={-20}
                   duration={500}
                 >
-                  Projets
+                  {titles[3]}
                 </Link>
                 <Link
                   className="text-gray-200 hover:text-white font-medium cursor-pointer"
@@ -96,7 +100,7 @@ export default function Header() {
                   offset={-70}
                   duration={500}
                 >
-                  Contact
+                  {titles[4]}
                 </Link>
               </div>
             </div>
@@ -155,7 +159,7 @@ export default function Header() {
                     offset={-70}
                     duration={500}
                   >
-                    À propos
+                    {titles[0]}
                   </Link>
                   <Link
                     onClick={() => setNavbarOpen(false)}
@@ -168,7 +172,7 @@ export default function Header() {
                     offset={-70}
                     duration={500}
                   >
-                    Compétences
+                    {titles[1]}
                   </Link>
                   <Link
                     onClick={() => setNavbarOpen(false)}
@@ -181,7 +185,7 @@ export default function Header() {
                     offset={-70}
                     duration={500}
                   >
-                    Carrière
+                    {titles[2]}
                   </Link>
                   <Link
                     onClick={() => setNavbarOpen(false)}
@@ -194,7 +198,7 @@ export default function Header() {
                     offset={-70}
                     duration={500}
                   >
-                    Projets
+                    {titles[3]}
                   </Link>
                   <Link
                     onClick={() => setNavbarOpen(false)}
@@ -207,7 +211,7 @@ export default function Header() {
                     offset={-70}
                     duration={500}
                   >
-                    Contact
+                    {titles[4]}
                   </Link>
                 </div>
               </div>

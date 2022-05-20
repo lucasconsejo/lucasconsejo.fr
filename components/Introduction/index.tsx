@@ -1,4 +1,7 @@
+import { I18nContext } from "contexts/i18nContext";
+import { i18nIntro } from "i18n";
 import Image from "next/image";
+import { useContext } from "react";
 import { imageKitLoader } from "utils";
 
 const navigation = [
@@ -55,6 +58,8 @@ const navigation = [
 ];
 
 export default function Introduction() {
+  const { localeState } = useContext(I18nContext);
+  const { subTitle, scrollInfo } = i18nIntro[localeState];
   return (
     <div>
       <div
@@ -67,7 +72,7 @@ export default function Introduction() {
               Lucas Consejo
             </h1>
             <div className="flex flex-col items-center sm:flex-row font-medium text-lg sm:text-2xl space-x-1 whitespace-nowrap">
-              <h2 className="text-left">Ingénieur d&#39;étude - Développeur</h2>
+              <h2 className="text-left">{subTitle}</h2>
               <a
                 href="https://www.cdiscount.com/"
                 target="_blank"
@@ -127,7 +132,7 @@ export default function Introduction() {
               d="M4 8a8 8 0 1 1 16 0v8a8 8 0 1 1-16 0V8Zm14 0v8a6 6 0 0 1-12 0V8a6 6 0 1 1 12 0Z" clipRule="evenodd" />
           </g>
         </svg>
-        <p>Défiler vers le bas </p>
+        <p>{scrollInfo}</p>
       </div>
     </div>
   );

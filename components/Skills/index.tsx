@@ -1,10 +1,22 @@
 import { Title } from "components";
+import { I18nContext } from "contexts/i18nContext";
+import { i18nSkills } from "i18n";
+import { useContext } from "react";
 import Icon from "./icon";
 
 export default function Skills() {
+  const { localeState } = useContext(I18nContext);
+  const { 
+    title, 
+    subTitle, 
+    others, 
+    methods, 
+    env, 
+    os 
+  } = i18nSkills[localeState];
   return (
     <div id="skills">
-      <Title title="Compétences" subTitle="Ce que je maîtrise le mieux" />
+      <Title title={title} subTitle={subTitle} />
 
       <div className="flex flex-wrap items-center justify-center md:justify-between w-full max-w-4xl mx-auto pt-4 sm:mt-10">
         <Icon
@@ -12,7 +24,7 @@ export default function Skills() {
           src="/lucasconsejo/logo/react.webp"
           url="https://fr.reactjs.org/"
         >
-          React JS et React Native
+          React JS & React Native
         </Icon>
 
         <Icon
@@ -75,7 +87,7 @@ export default function Skills() {
       <div className="flex items-center mt-2 mb-4 max-w-[16rem] w-full space-x-2 mx-auto">
         <div className="h-px flex-grow bg-white/20"></div>
         <div className="text-white/30 text-md font-medium uppercase">
-          autres
+          {others}
         </div>
         <div className="h-px flex-grow bg-white/20"></div>
       </div>
@@ -337,17 +349,17 @@ export default function Skills() {
 
       <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mx-auto">
         <div className="text-zinc-200 mx-2 bg-zinc-800/80 font-medium p-2.5 rounded leading-4 border border-1 border-zinc-700/70 shadow-[rgb(255,255,255,0.16)_0px_-1px_1px_inset] hover:bg-purple-700 cursor-default">
-          Méthode agile
+          {methods[0]}
         </div>
         <div className="text-zinc-200 mx-2 bg-zinc-800/80 font-medium p-2.5 rounded leading-4 border border-1 border-zinc-700/70 shadow-[rgb(255,255,255,0.16)_0px_-1px_1px_inset] hover:bg-purple-700 cursor-default">
-          Culture DevOps
+          {methods[1]}
         </div>
       </div>
 
       <div className="flex items-center mt-10 mb-4 max-w-[16rem] w-full space-x-2 mx-auto">
         <div className="h-px flex-grow bg-white/20"></div>
         <div className="text-white/30 text-md font-medium uppercase">
-          Environnement
+          {env}
         </div>
         <div className="h-px flex-grow bg-white/20"></div>
       </div>
@@ -360,7 +372,7 @@ export default function Skills() {
           url="https://www.apple.com/fr/macos/monterey/"
           className="lg:w-9 lg:h-9"
         >
-          MacOS sur Macbook Pro perso
+          {os[0]}
         </Icon>
         <Icon
           id="windows"
@@ -369,7 +381,7 @@ export default function Skills() {
           url="https://www.microsoft.com/fr-fr/software-download/windows10ISO?navItemId=daef1c13-0b0d-425e-905b-df14c9806f33"
           className="lg:w-9 lg:h-9"
         >
-          Windows 10 sur ordi perso/travail
+          {os[1]}
         </Icon>
         <Icon
           id="linux"
@@ -378,7 +390,7 @@ export default function Skills() {
           url="https://www.linux.org/"
           className="lg:w-10 lg:h-10"
         >
-          Ubuntu/Debian/Raspbian sur serveur
+          {os[2]}
         </Icon>
       </div>
     </div>

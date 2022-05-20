@@ -1,4 +1,7 @@
+import { I18nContext } from "contexts/i18nContext";
 import dayjs from "dayjs";
+import { i18nFooter } from "i18n";
+import { useContext } from "react";
 
 const navigation = [
   {
@@ -54,6 +57,10 @@ const navigation = [
 ];
 
 export default function Footer() {
+  const { localeState } = useContext(I18nContext);
+  console.log(localeState)
+  const { copyright } = i18nFooter[localeState];
+  console.log(copyright)
   const year = dayjs().format("YYYY");
   return (
     <footer className="mb-5 lg:mb-10 xl:mb-0">
@@ -74,7 +81,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base text-gray-400">
-            &copy; {year} Lucas Consejo. Tous droits réservés.
+            &copy; {year} {copyright}
           </p>
         </div>
       </div>

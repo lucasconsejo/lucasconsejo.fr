@@ -8,4 +8,11 @@ export const imageKitLoader = ({ src, width, quality }: any) => {
     let urlEndpoint = "https://ik.imagekit.io/qipvcstsaar";
     if(urlEndpoint[urlEndpoint.length-1] === "/") urlEndpoint = urlEndpoint.substring(0, urlEndpoint.length - 1);
     return `${urlEndpoint}/${src}?tr=${paramsString}`
-}
+};
+
+export const lang = (locales: string | undefined) => {
+    if (locales === undefined) {
+        return "fr";
+    }
+    return locales.substring(0, 2);
+};

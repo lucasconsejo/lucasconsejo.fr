@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: 
+Disallow: /fr
+Disallow: /en
 
 Sitemap: https://www.lucasconsejo.fr/sitemap.xml

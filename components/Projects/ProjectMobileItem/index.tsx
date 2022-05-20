@@ -1,4 +1,7 @@
+import { I18nContext } from "contexts/i18nContext";
+import { i18nProjects } from "i18n";
 import Image from "next/image";
+import { useContext } from "react";
 import { imageKitLoader } from '../../../utils/index';
 
 type ProjectMobileItemProps = {
@@ -14,6 +17,8 @@ type ProjectMobileItemProps = {
 };
 
 export default function ProjectMobileItem({ project }: ProjectMobileItemProps) {
+  const { localeState } = useContext(I18nContext);
+  const { urlAccess } = i18nProjects[localeState];
   return (
     <div
       className="w-11/12 rounded-lg mt-12 mx-auto"
@@ -79,7 +84,7 @@ export default function ProjectMobileItem({ project }: ProjectMobileItemProps) {
                 rel="noreferrer"
                 className="bg-blue-600 text-white rounded-sm px-3 py-2 shadow-md"
               >
-                Accéder au site
+                {urlAccess}
               </a>
             )}
           </div>
