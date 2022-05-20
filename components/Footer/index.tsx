@@ -58,9 +58,7 @@ const navigation = [
 
 export default function Footer() {
   const { localeState } = useContext(I18nContext);
-  console.log(localeState)
   const { copyright } = i18nFooter[localeState];
-  console.log(copyright)
   const year = dayjs().format("YYYY");
   return (
     <footer className="mb-5 lg:mb-10 xl:mb-0">
