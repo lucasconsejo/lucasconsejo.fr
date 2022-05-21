@@ -10,23 +10,12 @@ type LayoutProps = {
 };
 
 export default function Layout({ children }: LayoutProps) {
-  const ref = useRef<any>();
-  const refValue = useLazyLoading(ref);
-  const [isRef, setIsRef] =  useState(false);
-
-  useEffect(() => {
-    if (!isRef)
-      setIsRef(refValue);
-  }, [isRef, refValue]);
-
   return (
     <I18nProvider>
       <Header />
       <main>{children}</main>
       <TopScrollBtn />
-      <div ref={ref}>
-        {isRef && <Footer />}
-      </div>
+      <Footer />
     </I18nProvider>
   );
 }
