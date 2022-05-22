@@ -47,7 +47,7 @@ export default function Home() {
     if (width > 480) {
       return isRef && renderSection();
     } else {
-      renderSection();
+      return renderSection();
     }
   }
 
