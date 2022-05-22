@@ -10,14 +10,7 @@ type IconProps = {
   children: React.ReactNode;
 };
 
-export default function Icon({
-  id,
-  src,
-  url,
-  grayscale,
-  className,
-  children,
-}: IconProps) {
+export default function Icon({ id, src, url, grayscale, className, children }: IconProps) {
   return (
     <>
       <a

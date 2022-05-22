@@ -14,6 +14,7 @@ export default function Skills() {
     env, 
     os 
   } = i18nSkills[localeState];
+  
   return (
     <div id="skills">
       <Title title={title} subTitle={subTitle} />

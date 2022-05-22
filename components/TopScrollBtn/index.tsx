@@ -6,11 +6,7 @@ export default function TopScrollBtn() {
   const [show, setShow] = useState("hidden");
 
   useEffect(() => {
-    if (scroll > 60) {
-      setShow("fixed");
-    } else {
-      setShow("hidden");
-    }
+    setShow(scroll > 60 ? "fixed" : "hidden");
   }, [scroll]);
 
   const handleClick = () => {
@@ -30,7 +26,7 @@ export default function TopScrollBtn() {
         <path
           fill="currentColor"
           d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6l-6 6l1.41 1.41z"
-        ></path>
+        />
       </svg>
     </div>
   );
