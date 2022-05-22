@@ -29,16 +29,16 @@ export default function ProjectMobileItem({ project }: ProjectMobileItemProps) {
     >
       <div className="grid grid-cols-1 justify-center space-y-4 items-center justify-items-center">
         <div className="slide-project rounded-t-lg rounded-b-none">
-          <div className="py-10 px-8">
-            <div className="place-self-center relative w-full h-96">
+          <div className="py-6 px-8">
+            <div className="place-self-center relative w-full h-48">
               <Image 
                 loader={imageKitLoader}
                 src={project.img} 
                 layout="fill" 
                 className="object-contain" 
                 alt={project.title} 
-                sizes="20vw" 
-                quality={75}
+                sizes="10vw" 
+                quality={100}
               />
             </div>
           </div>
@@ -53,8 +53,8 @@ export default function ProjectMobileItem({ project }: ProjectMobileItemProps) {
                   layout="fill" 
                   className="object-contain" 
                   alt={project.title} 
-                  sizes="20vw"
-                  quality={50}
+                  sizes="10vw"
+                  quality={100}
                 />
               </div>
               {project.title}

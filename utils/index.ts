@@ -1,6 +1,6 @@
 export const imageKitLoader = ({ src, width, quality }: any) => {
     if(src[0] === "/") src = src.slice(1);
-    const params = [`w-${width}`];
+    const params = [`w-${width > 500 ? width : 500}`];
     if (quality) {
         params.push(`q-${quality}`);
     }
