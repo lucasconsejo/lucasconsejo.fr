@@ -15,8 +15,10 @@ import { useRouter } from "next/router";
 import { i18nMetas } from "i18n";
 import { I18nContext } from '../contexts/i18nContext';
 import { lang } from "utils";
+import useWindowSize from "hooks/useWindowSize";
 
 export default function Home() {
+  const { width } = useWindowSize(); 
   const { locale } = useRouter();
   const { localeState, localeDispatch } = useContext(I18nContext);
   localeDispatch({ 
@@ -32,6 +34,22 @@ export default function Home() {
       if (!isRef)
         setIsRef(refValue);
   }, [isRef, refValue]);
+  
+  const renderSection = () => (
+    <>
+      <Career />
+      <Projects />
+      <Contact />
+    </>
+  );
+
+  const renderLazyLoading = () => {
+    if (width > 480) {
+      return isRef && renderSection();
+    } else {
+      renderSection();
+    }
+  }
 
   return (
     <div>
@@ -41,22 +59,7 @@ export default function Home() {
         <About />
         <Skills />
       </div>
-      {
-        isRef ? (
-          <>
-            <Career />
-            <Projects />
-            <Contact />
-          </>
-        ) : (
-          <div className="flex justify-center">
-            <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-            </svg>
-          </div>
-        )
-      }
+      {renderLazyLoading()}
     </div>
   );
 }
