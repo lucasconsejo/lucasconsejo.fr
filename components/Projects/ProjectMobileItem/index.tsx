@@ -2,7 +2,7 @@ import { I18nContext } from "contexts/i18nContext";
 import { i18nProjects } from "i18n";
 import Image from "next/image";
 import { useContext } from "react";
-import { imageKitLoader } from '../../../utils/index';
+import { imageKitLoader } from "utils";
 
 type ProjectMobileItemProps = {
   project: {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { imageKitLoader } from '../../utils/index';
+import { imageKitLoader } from "utils";
 
 type IconProps = {
   id: string;

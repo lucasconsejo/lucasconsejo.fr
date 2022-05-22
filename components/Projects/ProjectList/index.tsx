@@ -3,7 +3,7 @@ import { useContext, useState } from "react";
 import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useInterval } from "hooks";
-import { imageKitLoader } from '../../../utils/index';
+import { imageKitLoader } from "utils";
 import { I18nContext } from "contexts/i18nContext";
 import { i18nProjects } from "i18n";
 import ProjectMobileItem from "../ProjectMobileItem";
