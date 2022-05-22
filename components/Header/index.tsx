@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Transition } from "@headlessui/react";
-import useScroll from "hooks/useScroll";
 import { Link, animateScroll } from "react-scroll";
+import { useScroll } from "hooks";
 import { i18nHeader } from "i18n";
 import { I18nContext } from "contexts/i18nContext";
 import SelectLang, { EnglishIcon, FrenchIcon } from "components/SelectLang";

@@ -1,12 +1,12 @@
+import Image from "next/image";
 import { useContext, useState } from "react";
-import useInterval from "../../../hooks/useInterval";
 import { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProjectMobileItem from "../ProjectMobileItem";
-import Image from "next/image";
+import { useInterval } from "hooks";
 import { imageKitLoader } from '../../../utils/index';
 import { I18nContext } from "contexts/i18nContext";
 import { i18nProjects } from "i18n";
+import ProjectMobileItem from "../ProjectMobileItem";
 
 const projects = [
   {

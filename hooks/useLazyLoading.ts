@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useLazyLoading = (ref: any) => {
+function useLazyLoading(ref: any) {
     const [isIntersecting, setIntersecting] = useState(false);
 
     useEffect(() => {
@@ -14,4 +14,5 @@ const useLazyLoading = (ref: any) => {
 
     return isIntersecting;
 }
+
 export default useLazyLoading;

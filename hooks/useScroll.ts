@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function useScroll() {
+function useScroll() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -18,3 +18,5 @@ export default function useScroll() {
 
   return [scrollY];
 }
+
+export default useScroll;
