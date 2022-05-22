@@ -1,11 +1,12 @@
+import { useContext } from "react";
 import { I18nContext } from "contexts/i18nContext";
 import { i18nAbout } from "i18n";
-import { useContext } from "react";
 import Hobby from "../Hobby";
 
 export default function HobbyList() {
   const { localeState } = useContext(I18nContext);
   const { content } = i18nAbout[localeState];
+  
   return (
     <div className="sm:flex flex-wrap max-w-screen-2xl mx-auto justify-center items-center text-center gap-8 pb-16 pt-5">
       <Hobby title={content[0].title} icon="movie" theme="dark">
