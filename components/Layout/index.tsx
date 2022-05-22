@@ -1,7 +1,5 @@
-import dynamic from "next/dynamic";
 import React from "react";
-import { Header, TopScrollBtn } from "components";
-const Footer = dynamic(() => import("components/Footer"));
+import { Footer, Header, TopScrollBtn } from "components";
 import I18nProvider from "contexts/i18nContext";
 
 type LayoutProps = {
