@@ -7,8 +7,9 @@ type MetasProps = {
   description?: string;
 };
 
-function Metas({ title, description }: MetasProps) {
+export default function Metas({ title, description }: MetasProps) {
   const systemTheme = useSystemTheme();
+
   return (
     <Head>
       <title>{title}</title>
@@ -38,8 +39,8 @@ function Metas({ title, description }: MetasProps) {
       <meta name="author" content="Lucas Consejo"></meta>
       <meta name="theme-color" content="rgb(16, 5, 36)"></meta>
       <meta property="og:title" content={title} />
-      <meta property="og:image" content="https://www.lucasconsejo.fr/img/og/lucasconsejo.png"/>
-      <meta property="og:image:secure_url" content="https://www.lucasconsejo.fr/img/og/lucasconsejo.png"/>
+      <meta property="og:image" content="https://www.lucasconsejo.fr/img/lucasconsejo.png"/>
+      <meta property="og:image:secure_url" content="https://www.lucasconsejo.fr/img/lucasconsejo.png"/>
       <meta property="og:image:type" content="image/png"/>
       <meta property="og:image:width" content="1200"/>
       <meta property="og:image:height" content="630"/>
@@ -52,9 +53,7 @@ function Metas({ title, description }: MetasProps) {
       <meta property="twitter:url" content="https://www.lucasconsejo.fr/"/>
       <meta name="twitter:title" content={title}/>
       <meta name="twitter:description" content={description ?? description} />
-      <meta name="twitter:image" content="https://www.lucasconsejo.fr/img/og/lucasconsejo.png" />
+      <meta name="twitter:image" content="https://www.lucasconsejo.fr/img/lucasconsejo.png" />
     </Head>
   );
 }
-
-export default React.memo(Metas);
