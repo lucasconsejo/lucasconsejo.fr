@@ -17,7 +17,7 @@ const Item: React.FC<ItemProps> = ({ urlName, url, content, isLast }) => (
                 href={url}
                 target="_blank"
                 rel="noreferrer"
-                className={`underline font-bold ${urlName === "Cdiscount" ? "hover:text-orange-cds" : "text-[#25b2a4]"}`}
+                className={`underline font-bold ${urlName === "Cdiscount" ? "hover:text-orange-cds" : "hover:text-[#25b2a4]"}`}
             >
                 {urlName}
             </a>
