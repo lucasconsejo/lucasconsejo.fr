@@ -11,7 +11,7 @@ const List: React.FC<ListProps> = ({ content }) => (
                 key={index}
                 urlName={item.urlName}
                 url={item.url}
-                content={content[0]} 
+                content={item} 
                 isLast={index === content.length-1}
                 color={item.color}
             />
