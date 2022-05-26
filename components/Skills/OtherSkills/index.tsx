@@ -6,6 +6,7 @@ export default function OtherSkills() {
         <div className="flex flex-wrap items-center justify-center w-full max-w-4xl mx-auto mb-3">
             {data.map((skill) => (
             <Icon
+                key={skill.id}
                 id={skill.id}
                 src={skill.src}
                 url={skill.url}
