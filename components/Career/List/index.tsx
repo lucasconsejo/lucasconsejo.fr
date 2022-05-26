@@ -13,7 +13,6 @@ const List: React.FC<ListProps> = ({ content }) => (
                 url={item.url}
                 content={item} 
                 isLast={index === content.length-1}
-                color={item.color}
             />
         ))}
     </ol>
