@@ -19,13 +19,13 @@ export default function RDC() {
           <h2 className="text-lg my-3 font-medium">Permissions demandées par l’Application</h2>
           <h3 className="my-3">Utilisation de la caméra</h3>
           <p className="mb-10">
-            Nous utilisons uniquement l’appareil photo pour permettre aux utilisateurs d'ajouter une image de couverture pour chaque note. Ces informations sont stockés uniquement sur l'appareil de l'utilisateur. Nous ne collectons aucune information.
+            Nous utilisons uniquement l’appareil photo pour permettre aux utilisateurs d&lsquoajouter une image de couverture pour chaque note. Ces informations sont stockés uniquement sur l&lsquoappareil de l&lsquoutilisateur. Nous ne collectons aucune information.
           </p>
           <h3 className="my-3">Utilisation du gestionnaire de fichier</h3>
           <p className="mb-10">
-            Nous utilisons uniquement le gestionnaire de fichier afin de stocker chaque note (texte, fichier image) sur l'espace disque de l'appareil de l'utilisateur. Nous ne collectons aucune information.
+            Nous utilisons uniquement le gestionnaire de fichier afin de stocker chaque note (texte, fichier image) sur l&lsquoespace disque de l&lsquoappareil de l&lsquoutilisateur. Nous ne collectons aucune information.
           </p>
-          <p className="mb-10">Nous ne collectons aucune information personnelle identifiable. Nous ne vendons pas, n’échangeons ni transférons ces informations à des tiers. Cependant, l'Application s’appuie sur des logiciels fournis par d’autres éditeurs. Leurs règles de confidentialité sont aussi applicables.</p>
+          <p className="mb-10">Nous ne collectons aucune information personnelle identifiable. Nous ne vendons pas, n’échangeons ni transférons ces informations à des tiers. Cependant, l&lsquoApplication s’appuie sur des logiciels fournis par d’autres éditeurs. Leurs règles de confidentialité sont aussi applicables.</p>
           <p>Lucas Consejo. Tous droits réservés.</p>
         </div>
     </div>
