@@ -68,6 +68,12 @@ Facultatif : Installer yarn
     npm run dev
    ```
 
+## Lighthouse
+
+Je suis pas peu fier du score Google Lighthouse 🥳
+
+<img src=".github/lighthouse.gif" alt="lighthouse" />
+
 ## Roadmap
 
 - [x] Multi-langue :
