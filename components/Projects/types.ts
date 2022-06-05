@@ -5,4 +5,5 @@ export type ProjectType = {
     url: string;
     isStudentProject: boolean;
     technos: Array<string>;
+    isApp: boolean;
 };

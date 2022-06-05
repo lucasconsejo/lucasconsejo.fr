@@ -11,6 +11,9 @@ const translate = {
                 description: "Application back-office pour le site nostetourtiere.com permettant d'éditer les textes et images sur le site.",
             },
             {
+                description: "Application iOS et Android permettant de créer des listes personnalisables. Actuellememnt disponible sur Google Play Store (App store à venir...).",
+            },
+            {
                 description: "Application iOS et Android pour commander un cuisinier à domicile afin qu'il prépare les plats choisis depuis votre cuisine.",
             },
             {
@@ -61,6 +64,9 @@ const translate = {
             },
             {
                 description: "Back-office application for the nostetourtiere.com site allowing to edit the texts and images on the site.",
+            },
+            {
+                description: "iOS and Android application for creating customizable lists. Currently available on Google Play Store (App store coming soon...).",
             },
             {
                 description: "iOS and Android application to order a home cook to prepare the chosen dishes from your kitchen.",

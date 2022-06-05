@@ -26,7 +26,7 @@ export default function Project({ project, description }: ContainerProps) {
                     <Description text={description} />
                     <Technos technos={project.technos} />
                     {!project.isStudentProject 
-                        ? <UrlAccess url={project.url} /> 
+                        ? <UrlAccess url={project.url} isApp={project.isApp} /> 
                         : null
                     }
                 </div>

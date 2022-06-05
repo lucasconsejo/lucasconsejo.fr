@@ -15,6 +15,7 @@ const projects: Array<ProjectType> = [
             "Express JS",
             "MongoDB",
         ],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/dashboard.webp",
@@ -30,6 +31,19 @@ const projects: Array<ProjectType> = [
             "Express JS",
             "MongoDB",
         ],
+        isApp: false,
+    },
+    {
+        img: "/lucasconsejo/projects/notes.webp",
+        icon: "/lucasconsejo/logo/notes.webp",
+        title: "Notes",
+        url: "https://play.google.com/store/apps/details?id=com.lucasconsejo.notes",
+        isStudentProject: false,
+        technos: [
+            "React Native",
+            "SQLite",
+        ],
+        isApp: true,
     },
     {
         img: "/lucasconsejo/projects/reverse-eats.webp",
@@ -44,6 +58,7 @@ const projects: Array<ProjectType> = [
             "NodeJS",
             "Firebase",
         ],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/conore.webp",
@@ -60,6 +75,7 @@ const projects: Array<ProjectType> = [
             "Kubernetes",
             "Grafana",
         ],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/react-svg-color.webp",
@@ -68,6 +84,7 @@ const projects: Array<ProjectType> = [
         url: "https://www.npmjs.com/package/react-svg-color",
         isStudentProject: false,
         technos: ["React JS", "Gitlab CI/CD"],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/lucasconsejo.webp",
@@ -76,6 +93,7 @@ const projects: Array<ProjectType> = [
         url: "https://lucasconsejo.fr",
         isStudentProject: false,
         technos: ["Next JS", "Typescript", "Gitlab CI/CD"],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/hmp.webp",
@@ -92,6 +110,7 @@ const projects: Array<ProjectType> = [
             "Kubernetes",
             "Grafana",
         ],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/wimm.webp",
@@ -100,6 +119,7 @@ const projects: Array<ProjectType> = [
         url: "",
         isStudentProject: true,
         technos: ["React JS", "Typescript", "Laravel", "MySQL", "Gitlab CI/CD"],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/reactly.webp",
@@ -115,6 +135,7 @@ const projects: Array<ProjectType> = [
             "MongoDB",
             "Gitlab CI/CD",
         ],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/abc.webp",
@@ -123,6 +144,7 @@ const projects: Array<ProjectType> = [
         url: "",
         isStudentProject: true,
         technos: ["React JS", "Tailwind CSS", ".NET", "MongoDB", "Jenkins"],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/player.webp",
@@ -131,6 +153,7 @@ const projects: Array<ProjectType> = [
         url: "https://music-player-copperdev.vercel.app/",
         isStudentProject: false,
         technos: ["React JS"],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/calculatrice.webp",
@@ -139,6 +162,7 @@ const projects: Array<ProjectType> = [
         url: "https://calculator-copperdev.vercel.app/",
         isStudentProject: false,
         technos: ["React JS"],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/atoute.webp",
@@ -155,6 +179,7 @@ const projects: Array<ProjectType> = [
             "Elasticsearch",
             "Kibana",
         ],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/sospr.webp",
@@ -163,6 +188,7 @@ const projects: Array<ProjectType> = [
         url: "",
         isStudentProject: true,
         technos: ["Laravel", "Tailwind CSS", "Active Directory", "MySQL"],
+        isApp: false,
     },
     {
         img: "/lucasconsejo/projects/sylab.webp",
@@ -171,6 +197,7 @@ const projects: Array<ProjectType> = [
         url: "",
         isStudentProject: true,
         technos: ["Symfony", "Bootstrap", "MySQL"],
+        isApp: false,
     },
 ];
 
