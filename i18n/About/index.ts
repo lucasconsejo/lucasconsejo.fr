@@ -15,7 +15,7 @@ const translate = {
             },
             {
                 title: "Jeux vidéos",
-                start: "Je suis bon public, que ce soit en solo ou en multi, jeux indés ou triple A, je peux y passer pas mal d&#39;heures dessus. Préférence pour les",
+                start: "Je suis bon public, que ce soit en solo ou en multi, jeux indés ou triple A, je peux y passer pas mal d'heures dessus. Préférence pour les",
             }
         ],
     },
